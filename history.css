@@ -316,9 +316,9 @@ html, body {
 }
 
 .loadingtext {
-  font-size: 30px;
+  font-size: 6vmin;
   font-weight: bolder;
-  margin-bottom: 30px;
+  margin-bottom: 6vmin;
   -webkit-animation: textmoving 1s infinite alternate;
           animation: textmoving 1s infinite alternate;
 }
@@ -345,9 +345,9 @@ html, body {
   }
 }
 .loading {
-  width: 200px;
-  height: 8px;
-  border-radius: 5px;
+  width: 40vmin;
+  height: 2vmin;
+  border-radius: 1vmin;
   background-color: #fff;
   overflow: hidden;
   -webkit-transition: 0.5s;
