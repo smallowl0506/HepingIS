@@ -21,7 +21,7 @@ html, body {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-image: url(https://img.onl/uYv2OJ);
+  background-image: url(https://ppt.cc/fLViAx@.jpg);
 }
 
 .title {
@@ -78,15 +78,15 @@ html, body {
 }
 .content .scrollitem .scrolltitletext {
   position: absolute;
-  font-size: 3vmin;
+  font-size: 2.6vmin;
   font-weight: bolder;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
   z-index: 3;
 }
 .content .scrollitem .leftpicture {
@@ -189,7 +189,7 @@ html, body {
   bottom: 0;
   padding: 0;
   margin: 0;
-  width: 10vmin;
+  width: 15vmin;
   height: 10vmin;
 }
 .content .backtoindex a {
