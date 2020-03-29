@@ -3,6 +3,19 @@
   font-family: "微軟正黑體";
 }
 
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  background-image: url(https://img.onl/jZGkB);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
 .sitebody {
   display: -webkit-box;
   display: flex;
@@ -13,10 +26,6 @@
   width: 100%;
   height: 800px;
   margin: 0;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/%E5%8F%B0%E7%81%A3%E5%9F%BA%E9%9A%86%E8%81%96%E8%96%A9%E7%88%BE%E7%93%A6%E5%A4%9A%E5%9F%8E%E6%A8%A1%E5%9E%8B.jpg/525px-%E5%8F%B0%E7%81%A3%E5%9F%BA%E9%9A%86%E8%81%96%E8%96%A9%E7%88%BE%E7%93%A6%E5%A4%9A%E5%9F%8E%E6%A8%A1%E5%9E%8B.jpg);
 }
 
 .header {
@@ -42,6 +51,26 @@
 .sidebar_left {
   -webkit-box-flex: 2;
           flex: 2;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+.sidebar_left a {
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  margin: 20px;
+}
+.sidebar_left a:hover {
+  background-color: white;
+  text-decoration: none;
+  color: black;
 }
 
 .leftImgHover {
@@ -90,7 +119,6 @@
 }
 
 .footer {
-  background-color: white;
   -webkit-box-flex: 0.25;
           flex: 0.25;
 }
