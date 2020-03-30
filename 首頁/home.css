@@ -1,5 +1,8 @@
 *{
-    
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
 }
 html,body{
     margin: 0;
@@ -111,27 +114,69 @@ html,body{
    
     text-align:right;
     z-index: 2;
-    
+
+    text-shadow:0 1px 0 #ccc, 
+                0 2px 0 #c9c9c9,
+                0 3px 0 #bbb,
+                0 4px 0 #b9b9b9,
+                0 5px 0 #aaa,
+                0 6px 1px rgba(0,0,0,.1),
+                0 0 5px rgba(0,0,0,.1),
+                0 1px 3px rgba(0,0,0,.3),
+                0 3px 5px rgba(0,0,0,.2),
+                0 5px 10px rgba(0,0,0,.25),
+                0 10px 10px rgba(0,0,0,.2),
+                0 20px 20px rgba(0,0,0,.15);
 }
 
 .title1{ 
-    font-size:3em;
+    font-size:6em;
     font-family: 微軟正黑體;
-    font-weight:0;
+    font-weight:900;
 }
 
 
 .title2{
-    font-size:0.9em;
+    font-size:6em;
     font-family:fantasy;
 }
 
-/*
-
-.h2{
-    z-index: 2;
+.button a{
+    position: absolute;
+    color: initial;
+    text-decoration: initial;
+    font-family: 微軟正黑體;
+    font-size: 3em;
+    text-shadow:0 1px 0 #ccc, 
+                0 2px 0 #c9c9c9,
+                0 3px 0 #bbb,
+                0 4px 0 #b9b9b9,
+                0 5px 0 #aaa,
+                0 6px 1px rgba(0,0,0,.1),
+                0 0 5px rgba(0,0,0,.1),
+                0 1px 3px rgba(0,0,0,.3),
+                0 3px 5px rgba(0,0,0,.2),
+                0 5px 10px rgba(0,0,0,.25),
+                0 10px 10px rgba(0,0,0,.2),
+                0 20px 20px rgba(0,0,0,.15);
+    top: 76%;
+    left: 65%;
+    padding: 1% 2%;
+    z-index: 3;
+    border-radius: 50%;
+    background: url(ship.png),linear-gradient(90deg,white,aqua);
+    background: url(ship.png),-webkit-linear-gradient(90deg,white,aqua);
+    background: url(ship.png),-o-linear-gradient(90deg,white,aqua);
+    background: url(ship.png),-moz-linear-gradient(90deg,white,aqua);
+    background-size: auto 100%;
+    transition: 0.5s
 }
-*/
+
+.button a:hover{
+    transform: scale(1.3);
+}
+
+
 /*
 .bg img {
     min-height: 100%;
@@ -147,4 +192,7 @@ html,body{
     }
 }
 */
+
+
+
 
