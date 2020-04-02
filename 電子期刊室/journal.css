@@ -66,6 +66,11 @@ body {
           flex: 1;
   margin-top: 20px;
 }
+.content .part a {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+}
 .content .backtoindex {
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
