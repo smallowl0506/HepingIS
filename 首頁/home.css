@@ -4,10 +4,12 @@
     -o-user-select:none;
     user-select:none;
 }
+
 html,body{
     margin: 0;
     background-image:url(background.jpg);
     background-size: cover;
+    background-position:center;
     height:100%;
     margin: 0;
     padding: 0;
