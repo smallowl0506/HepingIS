@@ -11,11 +11,13 @@ var timer = setInterval(function () {
 
 $(".scrollitem1").hover(
   function () {
-    $(".title h1").text("從遠古到近世：原漢移民與轉口貿易");
-    $(".title p").text("");
+    $(".title h1").text("歷史發展廳");
+    $(".title p").css("font-size","4.5vmin");
+    $(".title p").text("從遠古到近世：原漢移民與轉口貿易");
   },
   function () {
     $(".title h1").text("歷史發展廳");
+    $(".title p").css("font-size","initial");
     $(".title p").text(
       "本廳根據時間軸由最早雞籠的原住民、大航海時代，經過西班牙、荷蘭、明鄭、清代、日本殖民，到戰後國府各個階段本館都有豐富的圖文，並且都有嚴格的學術研究依據，請點選下列各展室進入參觀。"
     );
@@ -24,11 +26,13 @@ $(".scrollitem1").hover(
 
 $(".scrollitem2").hover(
   function () {
-    $(".title h1").text("大航海時代：西荷明鄭的交錯");
-    $(".title p").text("");
+    $(".title h1").text("歷史發展廳");
+    $(".title p").css("font-size","4.5vmin");
+    $(".title p").text("大航海時代：西荷明鄭的交錯");
   },
   function () {
     $(".title h1").text("歷史發展廳");
+    $(".title p").css("font-size","initial");
     $(".title p").text(
       "本廳根據時間軸由最早雞籠的原住民、大航海時代，經過西班牙、荷蘭、明鄭、清代、日本殖民，到戰後國府各個階段本館都有豐富的圖文，並且都有嚴格的學術研究依據，請點選下列各展室進入參觀。"
     );
@@ -37,11 +41,13 @@ $(".scrollitem2").hover(
 
 $(".scrollitem3").hover(
   function () {
-    $(".title h1").text("清代的變遷：從雞籠港到社寮庄");
-    $(".title p").text("");
+    $(".title h1").text("歷史發展廳");
+    $(".title p").css("font-size","4.5vmin");
+    $(".title p").text("清代的變遷：從雞籠港到社寮庄");
   },
   function () {
     $(".title h1").text("歷史發展廳");
+    $(".title p").css("font-size","initial");
     $(".title p").text(
       "本廳根據時間軸由最早雞籠的原住民、大航海時代，經過西班牙、荷蘭、明鄭、清代、日本殖民，到戰後國府各個階段本館都有豐富的圖文，並且都有嚴格的學術研究依據，請點選下列各展室進入參觀。"
     );
@@ -50,11 +56,13 @@ $(".scrollitem3").hover(
 
 $(".scrollitem4").hover(
   function () {
-    $(".title h1").text("日治時期的轉型：造船與水產基地");
-    $(".title p").text("");
+    $(".title h1").text("歷史發展廳");
+    $(".title p").css("font-size","4.5vmin");
+    $(".title p").text("日治時期的轉型：造船與水產基地");
   },
   function () {
     $(".title h1").text("歷史發展廳");
+    $(".title p").css("font-size","initial");
     $(".title p").text(
       "本廳根據時間軸由最早雞籠的原住民、大航海時代，經過西班牙、荷蘭、明鄭、清代、日本殖民，到戰後國府各個階段本館都有豐富的圖文，並且都有嚴格的學術研究依據，請點選下列各展室進入參觀。"
     );
@@ -63,11 +71,13 @@ $(".scrollitem4").hover(
 
 $(".scrollitem5").hover(
   function () {
-    $(".title h1").text("光復迄今的發展：從海洋產業到地方創生");
-    $(".title p").text("");
+    $(".title h1").text("歷史發展廳");
+    $(".title p").css("font-size","4.5vmin");
+    $(".title p").text("光復迄今的發展：從海洋產業到地方創生");
   },
   function () {
     $(".title h1").text("歷史發展廳");
+    $(".title p").css("font-size","initial");
     $(".title p").text(
       "本廳根據時間軸由最早雞籠的原住民、大航海時代，經過西班牙、荷蘭、明鄭、清代、日本殖民，到戰後國府各個階段本館都有豐富的圖文，並且都有嚴格的學術研究依據，請點選下列各展室進入參觀。"
     );

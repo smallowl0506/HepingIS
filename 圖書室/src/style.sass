@@ -32,6 +32,7 @@ html,body
   h1
     margin-top: 10px
     margin-bottom: 5px
+    font-size: 6vmin
   p
     margin-top: 0
     margin-bottom: 0
@@ -55,6 +56,7 @@ html,body
     transform: translateY(-50%)
     height: 60%
     width: 5%
+    animation: scrollmoveback 3s both
     &:hover
       animation: scrollmove 3s both
       .intro,.year,.leftpicture,.leftpicturetext
@@ -167,6 +169,12 @@ html,body
   100%
     width: 100%
 
+@keyframes scrollmoveback
+  0%
+    width: 100%
+  100%
+    width: 5%  
+  
 @keyframes appear
   0%
     opacity: 0
