@@ -65,19 +65,6 @@ html, body {
           transform: translateY(-50%);
   height: 60%;
   width: 5%;
-  -webkit-animation: scrollmoveback 3s both;
-          animation: scrollmoveback 3s both;
-}
-.content .scrollitem:hover {
-  -webkit-animation: scrollmove 3s both;
-          animation: scrollmove 3s both;
-}
-.content .scrollitem:hover .intro, .content .scrollitem:hover .year, .content .scrollitem:hover .leftpicture, .content .scrollitem:hover .leftpicturetext {
-  -webkit-animation: appear 3s both;
-          animation: appear 3s both;
-}
-.content .scrollitem:hover .scrolltitletext {
-  display: none;
 }
 .content .scrollitem .scrolltitletext {
   position: absolute;
@@ -200,115 +187,6 @@ html, body {
   color: white;
 }
 
-@-webkit-keyframes scrollmove {
-  0% {
-    width: 5%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-@keyframes scrollmove {
-  0% {
-    width: 5%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-@-webkit-keyframes scrollmoveback {
-  0% {
-    width: 100%;
-  }
-  100% {
-    width: 5%;
-  }
-}
-@keyframes scrollmoveback {
-  0% {
-    width: 100%;
-  }
-  100% {
-    width: 5%;
-  }
-}
-@-webkit-keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  70% {
-    opacity: 0.12;
-  }
-  72% {
-    opacity: 0.24;
-  }
-  74% {
-    opacity: 0.36;
-  }
-  76% {
-    opacity: 0.48;
-  }
-  78% {
-    opacity: 0.6;
-  }
-  80% {
-    opacity: 0.75;
-  }
-  85% {
-    opacity: 0.8;
-  }
-  88% {
-    opacity: 0.85;
-  }
-  92% {
-    opacity: 0.9;
-  }
-  96% {
-    opacity: 0.95;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  70% {
-    opacity: 0.12;
-  }
-  72% {
-    opacity: 0.24;
-  }
-  74% {
-    opacity: 0.36;
-  }
-  76% {
-    opacity: 0.48;
-  }
-  78% {
-    opacity: 0.6;
-  }
-  80% {
-    opacity: 0.75;
-  }
-  85% {
-    opacity: 0.8;
-  }
-  88% {
-    opacity: 0.85;
-  }
-  92% {
-    opacity: 0.9;
-  }
-  96% {
-    opacity: 0.95;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .pageLoading {
   z-index: 5;
   position: fixed;
