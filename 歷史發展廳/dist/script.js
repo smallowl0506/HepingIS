@@ -2,7 +2,7 @@ var percent = 0;
 
 var timer = setInterval(function () {
   $(".bar").css("width", percent + "%");
-  percent += 1;
+  percent += 0.333;
   if (percent > 102) {
     $(".pageLoading").addClass("complete");
     clearInterval(timer);
@@ -113,3 +113,25 @@ $(".scrollitem5").hover(
     TweenMax.to(".scrolltitletext5",0.1,{opacity: 1})
   }
 );
+
+
+TweenMax.to(".wave",15,{
+  top: 700,
+  delay: 6,
+  ease: Elastic.easeOut.config(0.6,0.3)
+  //(偏移量多寡,軟性程度)
+})
+
+TweenMax.from(".ship",15,{
+  top: "44%",
+  delay: 6,
+  ease: Elastic.easeOut.config(0.3,0.055)
+  //(偏移量多寡,軟性程度)
+})
+
+TweenMax.from(".scrollitem",8,{
+  left: -1500,
+  delay: 7,
+  ease: Elastic.easeOut.config(0.6,0.3)
+  //(偏移量多寡,軟性程度)
+})
