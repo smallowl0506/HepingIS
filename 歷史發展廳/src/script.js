@@ -1,8 +1,15 @@
+// function delayURL(url,time){
+//     setTimeout("parent.location.href = 'url' ",time)
+// }
+// function changePage(){
+//   setTimeout(location.href="https://smallowl0506.github.io/test_website_setup/%E5%BE%9E%E9%81%A0%E5%8F%A4%E5%88%B0%E8%BF%91%E4%B8%96/index.html",3000)
+// }
+
 var percent = 0;
 
 var timer = setInterval(function () {
   $(".bar").css("width", percent + "%");
-  percent += 0.333;
+  percent += 0.5;
   if (percent > 102) {
     $(".pageLoading").addClass("complete");
     clearInterval(timer);
@@ -114,24 +121,37 @@ $(".scrollitem5").hover(
   }
 );
 
+var scroll = []
+scroll.push($(".scrollitem"))
+
 
 TweenMax.to(".wave",15,{
-  top: 700,
-  delay: 6,
-  ease: Elastic.easeOut.config(0.6,0.3)
+  top: "180%",
+  delay: 4,
+  ease: Elastic.easeOut.config(0.6,0.5)
   //(偏移量多寡,軟性程度)
 })
 
-TweenMax.from(".ship",15,{
-  top: "44%",
-  delay: 6,
-  ease: Elastic.easeOut.config(0.3,0.055)
+TweenMax.staggerFrom(".scrollitem",8,{
+  left: 3000,
+  delay: 5,
+  ease: Elastic.easeOut.config(0.2,0.3)
   //(偏移量多寡,軟性程度)
-})
+},1)
 
-TweenMax.from(".scrollitem",8,{
-  left: -1500,
-  delay: 7,
-  ease: Elastic.easeOut.config(0.6,0.3)
-  //(偏移量多寡,軟性程度)
+$('a').click(function (e) {
+    e.preventDefault();                   // 阻止原生超連結事件發生
+    var goTo = this.getAttribute("href"); // 取得原來超連結
+
+    // 此處可以進行中間處理
+    TweenMax.to(".wave",4,{
+      top: 0,
+      delay: 1,
+      ease: Elastic.easeOut.config(0.2,0.5)
+      //(偏移量多寡,軟性程度)
+    })
+    
+    setTimeout(function(){
+         window.location = goTo;
+    }, 5000);                             // 時間到後跳轉
 })
