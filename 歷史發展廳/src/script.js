@@ -5,16 +5,16 @@
 //   setTimeout(location.href="https://smallowl0506.github.io/test_website_setup/%E5%BE%9E%E9%81%A0%E5%8F%A4%E5%88%B0%E8%BF%91%E4%B8%96/index.html",3000)
 // }
 
-var percent = 0;
+// var percent = 0;
 
-var timer = setInterval(function () {
-  $(".bar").css("width", percent + "%");
-  percent += 0.5;
-  if (percent > 102) {
-    $(".pageLoading").addClass("complete");
-    clearInterval(timer);
-  }
-}, 20);
+// var timer = setInterval(function () {
+//   $(".bar").css("width", percent + "%");
+//   percent += 0.5;
+//   if (percent > 102) {
+//     $(".pageLoading").addClass("complete");
+//     clearInterval(timer);
+//   }
+// }, 20);
 
 $(".scrollitem1").hover(
   function () {
@@ -121,8 +121,13 @@ $(".scrollitem5").hover(
   }
 );
 
-var scroll = []
-scroll.push($(".scrollitem"))
+// var scroll = []
+// scroll.push($(".scrollitem"))
+
+
+// TweenMax.to(".pageLoading",3.8,{
+//   display: "none"
+// })
 
 
 TweenMax.to(".wave",15,{
@@ -155,3 +160,50 @@ $('a').click(function (e) {
          window.location = goTo;
     }, 5000);                             // 時間到後跳轉
 })
+
+
+function showAll(){
+  $(".title,.content,.backtoindex,.pageLoading").addClass("showall")
+}
+
+// $(document).on('click', 'body', function(e) {
+//   console.log("點擊!!")
+//   swal({
+//     title: "我點擊囉",
+//     text: "即將顯示頁面",
+//     icon: "success",
+//     closeModal: true,
+//     closeOnEsc: true,
+//     closeOnClickOutside: true,
+//     timer: 2000,
+//     loadpicture(){}
+//     }
+//   ).then(
+//     swal.close(),
+//     console.log("then!"),
+//     showAll()
+//   )
+// })
+
+// document.getElementById('waveimg').onload = function(e){
+//   console.log("我好了")
+//   swal({
+//     title: "我點擊囉",
+//     text: "即將顯示頁面",
+//     icon: "success",
+//     closeModal: true,
+//     closeOnEsc: true,
+//     closeOnClickOutside: true,
+//     timer: 2000,
+//     loadpicture(){}
+//     }
+//   ).then(
+//     swal.close(),
+//     console.log("then!"),
+//     showAll()
+//   )
+// }
+
+document.getElementById('waveimg').onload = function(e){
+  showAll()
+}

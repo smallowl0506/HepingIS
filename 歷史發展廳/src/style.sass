@@ -23,7 +23,7 @@ html,body
   background-size: cover
   background-attachment: fixed
   background-repeat: no-repeat
-  background-image: url(https://img.onl/8lHvXr)
+  background-image: url(https://img.onl/DCJmru)
 .title
   background-color: rgba(black,0.7)
   text-align: center
@@ -209,7 +209,7 @@ html,body
   top: 0
   +flexCenter
   flex-direction: column
-  // background-color: #e9d5b0
+  background-color: #BFECFF
   transition: opacity 0.5s 0.5s
   &.complete
     opacity: 0
@@ -264,3 +264,14 @@ html,body
       display: initial
 .title,.content,.backtoindex
   animation: allhide 3s
+  display: none
+.title
+  &.showall
+    display: initial
+.content,.backtoindex
+  &.showall
+    display: flex
+.pageLoading
+  &.showall
+    display: none
+    
