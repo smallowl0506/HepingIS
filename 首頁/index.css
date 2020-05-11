@@ -23,16 +23,29 @@
     background-repeat: no-repeat;
     /*background: linear-gradient(135deg,white,darkblue);*/
     height:100%;
+  }
+
+  .HorizontalContainer{
     display: flex;
+    flex-direction: row;
+    height: 80%;
   }
 
   .left{
+    position: relative;
+    width: 100%;
+    height: 110%;
     display:flex;
     flex-direction: column;
-    height: 100%;
-    flex: 6;    
   }
 
+  .largetitle{
+    top: 1%;
+    position: relative;
+    width: 100%;
+    height: 10%;
+    letter-spacing: 50px;
+  }
 
   .largetitle span{
     position: relative;
@@ -98,6 +111,7 @@
   }
 
   .map{
+    position: relative;
     display:flex;
     flex-direction: column;
     height: 90%;
@@ -347,9 +361,11 @@
   }
 
   .right{
+    position: relative;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    flex: 4;
   }
 
 .text{
@@ -359,7 +375,7 @@
   flex-wrap: wrap;
   height: 100%;
   width: 85%;
-  margin-top: 15%;
+  margin-top: 12%;
   max-height:70%;
   overflow-y:auto;
   line-height: 60px;
@@ -416,9 +432,10 @@
   height: 100%;
 }
 
-.dock{
+.dockContainer{
   position: relative;
-  flex:3;
+  width: 100%;
+  height: 10%;
 }
 
 
@@ -501,3 +518,39 @@
   -webkit-animation-play-state: paused ;
   animation-play-state: paused ;
 }/*目前沒效*/
+
+.dockContainer {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /*overflow: hidden;*/
+  touch-action: none;
+}
+.dock {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(168, 218, 220, 1.00);
+  background-image: url(NewShip.png);
+  background-size: auto 100%;
+  background-position:center;
+  border: 10px solid rgba(136, 136, 136, .5);
+  border-radius: 50%;
+  touch-action: none;
+  user-select: none;
+}
+.dock a{
+  color: initial;
+  text-decoration: initial;
+  font-family: 微軟正黑體;
+}
+.dock:active {
+  background-color: rgb(245, 230, 99);
+}
+.dock:hover {
+  cursor: pointer;
+  border-width: 15px;
+  background-size: auto 115%;
+  background-position:center;
+}
