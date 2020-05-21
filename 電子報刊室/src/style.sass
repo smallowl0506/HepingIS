@@ -75,40 +75,10 @@ body
     a
       text-decoration: none
       color: white
-  
-.pageLoading
-  z-index: 5
-  position: fixed
-  +size(100%)
-  left: 0
-  top: 0
-  +flexCenter
-  flex-direction: column
-  background-color: #e9d5b0
-  transition: opacity 0.5s 0.5s
-  &.complete
-    opacity: 0
-    display: none
-    
-.loadingtext
-  font-size: 6vmin
-  font-weight: bolder
-  margin-bottom: 6vmin
-  animation: textmoving 1s infinite alternate
-  @keyframes textmoving
-    0%,10%
-      transform: translateY(50%)
-    90%,100%
-      transform: translateY(-50%)
-      color: blue
-  
-.loading
-  +size(40vmin,2vmin)
-  // margin-top: 80px
-  border-radius: 1vmin
-  background-color: #fff
-  overflow: hidden
-  transition: 0.5s
-  .bar
-    background-color: #ffa100
-    +size(0%,100%)
+#staff
+      color: yellow
+      background-color: transparent
+      cursor: pointer
+      text-decoration: none
+      font-size: 18px
+      
