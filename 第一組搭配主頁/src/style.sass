@@ -11,35 +11,43 @@ html,body
   // background-position: center 
   background-repeat: no-repeat
   overflow: hidden
+  // display: flex
+  // justify-content: center
+  // align-items: center
 .linkRoom
   position: absolute
-  height: 120px
-  width: 100px
-  right: 0
-  top: 0
+  height: 144px
+  width: 120px
+  right: 40px
+  top: 40px
   a
     text-decoration: none
     outline: none
   #guide
     height: 100%
     width: 100%
+    transition: 2s
+    &:hover
+      filter: drop-shadow(0px 0px 50px rgba(255, 242, 0, 0.95))
 // #castle
 //   position: absolute
 //   left: 50%
 //   top: 300px
 //   transform: translate(-50%,-50%)
 .titleText
+  // position: absolute
+  // top: 0
   text-align: center
   letter-spacing: 25px
   font-weight: bolder
-  font-size: 20px
+  font-size: 30px
   h1
     text-shadow: 2px 2px 3px #ffffff
 .puzzle
-  position: relative
+  position: absolute
   left: 50%
   top: 50%
-  transform: translate(-50%,-50%)
+  transform: translate(-50%,-50%)  scale(1.1)
   height: 400px
   width: 600px
 .castle
@@ -77,40 +85,50 @@ html,body
 //   position: absolute
 //   top:  41.5%
 //   left: 261px
+.castleHover
+  transition: 2s
+  &:hover
+    filter: drop-shadow(0px 0px 50px rgba(255, 242, 0, 0.7))
 #castle1
+  cursor: pointer
   position: absolute
   transform: rotate(45deg)
   left: -200px
   top: -40px
 #castle2
+  cursor: pointer
   position: absolute
   transform: rotate(125deg)
   top: -120px
   left: 185px
 #castle3
+  cursor: pointer
   position: absolute
   transform: rotate(175deg)
   top:  -18px
   left: 522px
 #castle4
+  cursor: pointer
   width: 255px
   position: absolute
   transform: rotate(78deg)
   top:  calc(36.5% + 100px)
   left: -210px
 #castle5
+  cursor: pointer
   width: 205px
   position: absolute
   transform: rotate(210deg)
   top:  calc(37% + 100px)
   left: 175px
 #castle6
+  cursor: pointer
   width: 235px
   position: absolute
   transform: rotate(140deg)
   top:  calc(41.5% + 120px)
   left: 461px
-
+  
 .reback
   #castle1
     position: absolute
@@ -162,15 +180,16 @@ html,body
 //   flex-direction: column
 
 .map
-  position: relative
+  position: absolute
   display: none
   opacity: 0
   flex-direction: column
   height: 400px
   width: 600px
   left: 50%
-  top: 50%
-  transform: translate(-50%,-150%)
+  top: 55%
+  transform: translate(-50%,-50%) scale(1.7)
+  transform-origin: 50% 50%
   text-align: center
   a
     display: flex

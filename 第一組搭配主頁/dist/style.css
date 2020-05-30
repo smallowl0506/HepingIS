@@ -13,10 +13,10 @@ html, body {
 
 .linkRoom {
   position: absolute;
-  height: 120px;
-  width: 100px;
-  right: 0;
-  top: 0;
+  height: 144px;
+  width: 120px;
+  right: 40px;
+  top: 40px;
 }
 .linkRoom a {
   text-decoration: none;
@@ -25,24 +25,30 @@ html, body {
 .linkRoom #guide {
   height: 100%;
   width: 100%;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+.linkRoom #guide:hover {
+  -webkit-filter: drop-shadow(0px 0px 50px rgba(255, 242, 0, 0.95));
+          filter: drop-shadow(0px 0px 50px rgba(255, 242, 0, 0.95));
 }
 
 .titleText {
   text-align: center;
   letter-spacing: 25px;
   font-weight: bolder;
-  font-size: 20px;
+  font-size: 30px;
 }
 .titleText h1 {
   text-shadow: 2px 2px 3px #ffffff;
 }
 
 .puzzle {
-  position: relative;
+  position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%) scale(1.1);
+          transform: translate(-50%, -50%) scale(1.1);
   height: 400px;
   width: 600px;
 }
@@ -61,7 +67,17 @@ html, body {
   opacity: 0;
 }
 
+.castleHover {
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+.castleHover:hover {
+  -webkit-filter: drop-shadow(0px 0px 50px rgba(255, 242, 0, 0.7));
+          filter: drop-shadow(0px 0px 50px rgba(255, 242, 0, 0.7));
+}
+
 #castle1 {
+  cursor: pointer;
   position: absolute;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -70,6 +86,7 @@ html, body {
 }
 
 #castle2 {
+  cursor: pointer;
   position: absolute;
   -webkit-transform: rotate(125deg);
           transform: rotate(125deg);
@@ -78,6 +95,7 @@ html, body {
 }
 
 #castle3 {
+  cursor: pointer;
   position: absolute;
   -webkit-transform: rotate(175deg);
           transform: rotate(175deg);
@@ -86,6 +104,7 @@ html, body {
 }
 
 #castle4 {
+  cursor: pointer;
   width: 255px;
   position: absolute;
   -webkit-transform: rotate(78deg);
@@ -95,6 +114,7 @@ html, body {
 }
 
 #castle5 {
+  cursor: pointer;
   width: 205px;
   position: absolute;
   -webkit-transform: rotate(210deg);
@@ -104,6 +124,7 @@ html, body {
 }
 
 #castle6 {
+  cursor: pointer;
   width: 235px;
   position: absolute;
   -webkit-transform: rotate(140deg);
@@ -159,7 +180,7 @@ html, body {
 }
 
 .map {
-  position: relative;
+  position: absolute;
   display: none;
   opacity: 0;
   -webkit-box-orient: vertical;
@@ -168,9 +189,11 @@ html, body {
   height: 400px;
   width: 600px;
   left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -150%);
-          transform: translate(-50%, -150%);
+  top: 55%;
+  -webkit-transform: translate(-50%, -50%) scale(1.7);
+          transform: translate(-50%, -50%) scale(1.7);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
   text-align: center;
 }
 .map a {
