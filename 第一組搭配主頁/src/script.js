@@ -102,8 +102,8 @@ $("#castle2").click(()=>{
    TweenMax.to("#castle2",3,{
    position: "absolute",
    transform: "rotate(0deg)",
-   top: "-8px",
-   left: "145px"
+   top: "-1.2vmin",
+   left: "21.5vmin"
    })
    if(castleTag[0]==1){
       TweenMax.to(".castle",3,{
@@ -132,8 +132,8 @@ $("#castle3").click(()=>{
    TweenMax.to("#castle3",3,{
    position: "absolute",
    transform: "rotate(0deg)",
-   top: "-4px",
-   left: "281px"
+   top: "-0.7vmin",
+   left: "42vmin"
    })
    if(castleTag[0]==1){
       TweenMax.to(".castle",3,{
@@ -160,11 +160,11 @@ $("#castle4").click(()=>{
      }
    }
    TweenMax.to("#castle4",3,{
-   width: "255px",
+   width: "38vmin",
    position: "absolute",
    transform: "rotate(0deg)",
-   top: "36.5%",
-   left: "-30px"
+   top: "22vmin",
+   left: "-4.5vmin"
    })
    if(castleTag[0]==1){
       TweenMax.to(".castle",3,{
@@ -191,11 +191,11 @@ $("#castle5").click(()=>{
      }
    }
    TweenMax.to("#castle5",3,{
-   width: "205px",
+   width: "width: 31vmin",
    position: "absolute",
    transform: "rotate(0deg)",
-   top: "37%",
-   left: "135px"
+   top: "22vmin",
+   left: "20vmin"
    })
    if(castleTag[0]==1){
       TweenMax.to(".castle",3,{
@@ -222,11 +222,11 @@ $("#castle6").click(()=>{
      }
    }
    TweenMax.to("#castle6",3,{
-   width: "235px",
+   width: "35vmin",
    position: "absolute",
    transform: "rotate(0deg)",
-   top: "41.5%",
-   left: "261px"
+   top: "24.8vmin",
+   left: "39.2vmin"
    })
    if(castleTag[0]==1){
       TweenMax.to(".castle",3,{

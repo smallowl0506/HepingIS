@@ -13,10 +13,10 @@ html, body {
 
 .linkRoom {
   position: absolute;
-  height: 144px;
-  width: 120px;
-  right: 40px;
-  top: 40px;
+  height: 15vmin;
+  width: 12vmin;
+  right: 4vmin;
+  top: 4vmin;
 }
 .linkRoom a {
   text-decoration: none;
@@ -37,7 +37,7 @@ html, body {
   text-align: center;
   letter-spacing: 25px;
   font-weight: bolder;
-  font-size: 30px;
+  font-size: 3vmin;
 }
 .titleText h1 {
   text-shadow: 2px 2px 3px #ffffff;
@@ -47,17 +47,14 @@ html, body {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(1.1);
-          transform: translate(-50%, -50%) scale(1.1);
-  height: 400px;
-  width: 600px;
+  -webkit-transform: translate(-35%, -50%) scale(1);
+          transform: translate(-35%, -50%) scale(1);
+  width: 50%;
 }
 
 .castle {
   display: inline-block;
-  width: 200px;
-  margin-left: 50px;
-  margin-right: 50px;
+  width: 30vmin;
 }
 
 #castleF {
@@ -77,60 +74,66 @@ html, body {
 }
 
 #castle1 {
+  z-index: 20;
   cursor: pointer;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
   position: absolute;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  left: -200px;
-  top: -40px;
+  top: -5vmin;
+  left: -23vmin;
 }
 
 #castle2 {
+  z-index: 20;
   cursor: pointer;
+  -webkit-transform: rotate(185deg);
+          transform: rotate(185deg);
   position: absolute;
-  -webkit-transform: rotate(125deg);
-          transform: rotate(125deg);
-  top: -120px;
-  left: 185px;
+  top: -10vmin;
+  left: 21.5vmin;
 }
 
 #castle3 {
+  z-index: 20;
   cursor: pointer;
+  -webkit-transform: rotate(235deg);
+          transform: rotate(235deg);
   position: absolute;
-  -webkit-transform: rotate(175deg);
-          transform: rotate(175deg);
-  top: -18px;
-  left: 522px;
+  top: -5vmin;
+  left: 62vmin;
 }
 
 #castle4 {
+  z-index: 20;
   cursor: pointer;
-  width: 255px;
+  -webkit-transform: rotate(230deg);
+          transform: rotate(230deg);
+  width: 38vmin;
   position: absolute;
-  -webkit-transform: rotate(78deg);
-          transform: rotate(78deg);
-  top: calc(36.5% + 100px);
-  left: -210px;
+  top: 28vmin;
+  left: -26vmin;
 }
 
 #castle5 {
+  z-index: 20;
   cursor: pointer;
-  width: 205px;
+  -webkit-transform: rotate(300deg);
+          transform: rotate(300deg);
+  width: 31vmin;
   position: absolute;
-  -webkit-transform: rotate(210deg);
-          transform: rotate(210deg);
-  top: calc(37% + 100px);
-  left: 175px;
+  top: 30vmin;
+  left: 22vmin;
 }
 
 #castle6 {
+  z-index: 20;
   cursor: pointer;
-  width: 235px;
+  -webkit-transform: rotate(75deg);
+          transform: rotate(75deg);
+  width: 35vmin;
   position: absolute;
-  -webkit-transform: rotate(140deg);
-          transform: rotate(140deg);
-  top: calc(41.5% + 120px);
-  left: 461px;
+  top: 28vmin;
+  left: 54vmin;
 }
 
 .reback #castle1 {
@@ -186,12 +189,12 @@ html, body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
-  height: 400px;
-  width: 600px;
+  height: 50vmin;
+  width: 80vmin;
   left: 50%;
   top: 55%;
-  -webkit-transform: translate(-50%, -50%) scale(1.7);
-          transform: translate(-50%, -50%) scale(1.7);
+  -webkit-transform: translate(-50%, -50%) scale(1.5);
+          transform: translate(-50%, -50%) scale(1.5);
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
   text-align: center;

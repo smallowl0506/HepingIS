@@ -16,10 +16,10 @@ html,body
   // align-items: center
 .linkRoom
   position: absolute
-  height: 144px
-  width: 120px
-  right: 40px
-  top: 40px
+  height: 15vmin
+  width: 12vmin
+  right: 4vmin
+  top: 4vmin
   a
     text-decoration: none
     outline: none
@@ -40,21 +40,18 @@ html,body
   text-align: center
   letter-spacing: 25px
   font-weight: bolder
-  font-size: 30px
+  font-size: 3vmin
   h1
     text-shadow: 2px 2px 3px #ffffff
 .puzzle
   position: absolute
   left: 50%
   top: 50%
-  transform: translate(-50%,-50%)  scale(1.1)
-  height: 400px
-  width: 600px
+  transform: translate(-35%,-50%)  scale(1)
+  width: 50%
 .castle
   display: inline-block
-  width: 200px
-  margin-left: 50px
-  margin-right: 50px
+  width: 30vmin
 #castleF
   width: 460px
   margin-left: 58px
@@ -64,70 +61,76 @@ html,body
 //   position: absolute
 // #castle2
 //   position: absolute
-//   top: -8px
-//   left: 145px
+//   top: -1.2vmin
+//   left: 21.5vmin
 // #castle3
 //   position: absolute
-//   top:  -4px
-//   left: 281px
+//   top:  -0.7vmin
+//   left: 42vmin
 // #castle4
-//   width: 255px
+//   width: 38vmin
 //   position: absolute
-//   top:  36.5%
-//   left: -30px
+//   top:  22vmin
+//   left: -4.5vmin
 // #castle5
-//   width: 205px
+//   width: 31vmin
 //   position: absolute
-//   top:  37%
-//   left: 135px
+//   top:  22vmin
+//   left: 20vmin
 // #castle6
-//   width: 235px
+//   width: 35vmin
 //   position: absolute
-//   top:  41.5%
-//   left: 261px
+//   top:  24.8vmin
+//   left: 39.2vmin
 .castleHover
   transition: 2s
   &:hover
     filter: drop-shadow(0px 0px 50px rgba(255, 242, 0, 0.7))
 #castle1
+  z-index: 20
   cursor: pointer
+  transform: rotate(135deg)
   position: absolute
-  transform: rotate(45deg)
-  left: -200px
-  top: -40px
+  top: -5vmin
+  left: -23vmin
 #castle2
+  z-index: 20
   cursor: pointer
+  transform: rotate(185deg)
   position: absolute
-  transform: rotate(125deg)
-  top: -120px
-  left: 185px
+  top: -10vmin
+  left: 21.5vmin
 #castle3
+  z-index: 20
   cursor: pointer
+  transform: rotate(235deg)
   position: absolute
-  transform: rotate(175deg)
-  top:  -18px
-  left: 522px
+  top:  -5vmin
+  left: 62vmin
 #castle4
+  z-index: 20
   cursor: pointer
-  width: 255px
+  transform: rotate(230deg)
+  width: 38vmin
   position: absolute
-  transform: rotate(78deg)
-  top:  calc(36.5% + 100px)
-  left: -210px
+  top:  28vmin
+  left: -26vmin
 #castle5
+  z-index: 20
   cursor: pointer
-  width: 205px
+  transform: rotate(300deg)
+  width: 31vmin
   position: absolute
-  transform: rotate(210deg)
-  top:  calc(37% + 100px)
-  left: 175px
+  top:  30vmin
+  left: 22vmin
 #castle6
+  z-index: 20
   cursor: pointer
-  width: 235px
+  transform: rotate(75deg)
+  width: 35vmin
   position: absolute
-  transform: rotate(140deg)
-  top:  calc(41.5% + 120px)
-  left: 461px
+  top:  28vmin
+  left: 54vmin
   
 .reback
   #castle1
@@ -184,11 +187,11 @@ html,body
   display: none
   opacity: 0
   flex-direction: column
-  height: 400px
-  width: 600px
+  height: 50vmin
+  width: 80vmin
   left: 50%
   top: 55%
-  transform: translate(-50%,-50%) scale(1.7)
+  transform: translate(-50%,-50%) scale(1.5)
   transform-origin: 50% 50%
   text-align: center
   a
