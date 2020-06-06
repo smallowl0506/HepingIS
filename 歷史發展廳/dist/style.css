@@ -292,21 +292,3 @@ html, body {
     display: initial;
   }
 }
-.title, .content, .backtoindex {
-  -webkit-animation: allhide 3s;
-          animation: allhide 3s;
-  display: none;
-}
-
-.title.showall {
-  display: initial;
-}
-
-.content.showall, .backtoindex.showall {
-  display: -webkit-box;
-  display: flex;
-}
-
-.pageLoading.showall {
-  display: none;
-}

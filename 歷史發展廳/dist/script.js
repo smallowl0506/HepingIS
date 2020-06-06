@@ -121,89 +121,48 @@ $(".scrollitem5").hover(
   }
 );
 
-// var scroll = []
-// scroll.push($(".scrollitem"))
 
 
-// TweenMax.to(".pageLoading",3.8,{
-//   display: "none"
+
+
+// TweenMax.to(".wave",15,{
+//   top: "180%",
+//   delay: 4,
+//   ease: Elastic.easeOut.config(0.6,0.5)
+//   //(偏移量多寡,軟性程度)
 // })
-
-
-TweenMax.to(".wave",15,{
-  top: "180%",
-  delay: 4,
-  ease: Elastic.easeOut.config(0.6,0.5)
-  //(偏移量多寡,軟性程度)
-})
 
 TweenMax.staggerFrom(".scrollitem",8,{
   left: 3000,
-  delay: 5,
+  delay: 3,
   ease: Elastic.easeOut.config(0.2,0.3)
   //(偏移量多寡,軟性程度)
 },1)
 
-$('a').click(function (e) {
-    e.preventDefault();                   // 阻止原生超連結事件發生
-    var goTo = this.getAttribute("href"); // 取得原來超連結
+// $('a').click(function (e) {
+//     e.preventDefault();                   // 阻止原生超連結事件發生
+//     var goTo = this.getAttribute("href"); // 取得原來超連結
 
-    // 此處可以進行中間處理
-    TweenMax.to(".wave",4,{
-      top: 0,
-      delay: 1,
-      ease: Elastic.easeOut.config(0.2,0.5)
-      //(偏移量多寡,軟性程度)
-    })
+//     // 此處可以進行中間處理
+//     TweenMax.to(".wave",4,{
+//       top: 0,
+//       delay: 1,
+//       ease: Elastic.easeOut.config(0.2,0.5)
+//       //(偏移量多寡,軟性程度)
+//     })
     
-    setTimeout(function(){
-         window.location = goTo;
-    }, 5000);                             // 時間到後跳轉
-})
-
-
-function showAll(){
-  $(".title,.content,.backtoindex,.pageLoading").addClass("showall")
-}
-
-// $(document).on('click', 'body', function(e) {
-//   console.log("點擊!!")
-//   swal({
-//     title: "我點擊囉",
-//     text: "即將顯示頁面",
-//     icon: "success",
-//     closeModal: true,
-//     closeOnEsc: true,
-//     closeOnClickOutside: true,
-//     timer: 2000,
-//     loadpicture(){}
-//     }
-//   ).then(
-//     swal.close(),
-//     console.log("then!"),
-//     showAll()
-//   )
+//     setTimeout(function(){
+//          window.location = goTo;
+//     }, 5000);                             // 時間到後跳轉
 // })
 
-// document.getElementById('waveimg').onload = function(e){
-//   console.log("我好了")
-//   swal({
-//     title: "我點擊囉",
-//     text: "即將顯示頁面",
-//     icon: "success",
-//     closeModal: true,
-//     closeOnEsc: true,
-//     closeOnClickOutside: true,
-//     timer: 2000,
-//     loadpicture(){}
-//     }
-//   ).then(
-//     swal.close(),
-//     console.log("then!"),
-//     showAll()
-//   )
+
+// function showAll(){
+//   $(".title,.content,.backtoindex,.pageLoading").addClass("showall")
 // }
 
-document.getElementById('waveimg').onload = function(e){
-  showAll()
-}
+
+
+// document.getElementById('waveimg').onload = function(e){
+//   showAll()
+// }
