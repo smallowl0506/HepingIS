@@ -76,14 +76,19 @@ $("#castle1").click(()=>{
    left: "0"
    })
    if(castleTag[0]==1){
-      TweenMax.to(".castle",3,{
-      delay: 3.5,
-      opacity: 0
+      TweenMax.to(".castle",1,{
+      delay: 4,
+      display: "none",
       })
-      TweenMax.to(".map",5,{
-      delay: 6,
+      TweenMax.to(".map",3,{
+      delay: 3,
       display: "flex",
       opacity: 1
+      })
+      TweenMax.to(".map",3,{
+      delay: 5,
+      height: "65vmin",
+      width: "104vmin"
       })
    }
 })
@@ -106,14 +111,19 @@ $("#castle2").click(()=>{
    left: "21.5vmin"
    })
    if(castleTag[0]==1){
-      TweenMax.to(".castle",3,{
-      delay: 3.5,
-      opacity: 0
+      TweenMax.to(".castle",1,{
+      delay: 4,
+      display: "none",
       })
-      TweenMax.to(".map",5,{
-      delay: 6,
+      TweenMax.to(".map",3,{
+      delay: 3,
       display: "flex",
       opacity: 1
+      })
+      TweenMax.to(".map",3,{
+      delay: 5,
+      height: "65vmin",
+      width: "104vmin"
       })
    }
 })
@@ -136,14 +146,19 @@ $("#castle3").click(()=>{
    left: "42vmin"
    })
    if(castleTag[0]==1){
-      TweenMax.to(".castle",3,{
-      delay: 3.5,
-      opacity: 0
+      TweenMax.to(".castle",1,{
+      delay: 4,
+      display: "none",
       })
-      TweenMax.to(".map",5,{
-      delay: 6,
+      TweenMax.to(".map",3,{
+      delay: 3,
       display: "flex",
       opacity: 1
+      })
+      TweenMax.to(".map",3,{
+      delay: 5,
+      height: "65vmin",
+      width: "104vmin"
       })
    }
 })
@@ -167,14 +182,19 @@ $("#castle4").click(()=>{
    left: "-4.5vmin"
    })
    if(castleTag[0]==1){
-      TweenMax.to(".castle",3,{
-      delay: 3.5,
-      opacity: 0
+     TweenMax.to(".castle",1,{
+      delay: 4,
+      display: "none",
       })
-      TweenMax.to(".map",5,{
-      delay: 6,
+      TweenMax.to(".map",3,{
+      delay: 3,
       display: "flex",
       opacity: 1
+      })
+      TweenMax.to(".map",3,{
+      delay: 5,
+      height: "65vmin",
+      width: "104vmin"
       })
    }
 })
@@ -198,14 +218,19 @@ $("#castle5").click(()=>{
    left: "20vmin"
    })
    if(castleTag[0]==1){
-      TweenMax.to(".castle",3,{
-      delay: 3.5,
-      opacity: 0
+      TweenMax.to(".castle",1,{
+      delay: 4,
+      display: "none",
       })
-      TweenMax.to(".map",5,{
-      delay: 6,
+      TweenMax.to(".map",3,{
+      delay: 3,
       display: "flex",
       opacity: 1
+      })
+      TweenMax.to(".map",3,{
+      delay: 5,
+      height: "65vmin",
+      width: "104vmin"
       })
    }
 }) 
@@ -229,14 +254,19 @@ $("#castle6").click(()=>{
    left: "39.2vmin"
    })
    if(castleTag[0]==1){
-      TweenMax.to(".castle",3,{
+      TweenMax.to(".castle",1,{
       delay: 4,
-      opacity: 0
+      display: "none",
       })
-      TweenMax.to(".map",5,{
-      delay: 6.5,
+      TweenMax.to(".map",3,{
+      delay: 3,
       display: "flex",
       opacity: 1
+      })
+      TweenMax.to(".map",3,{
+      delay: 5,
+      height: "65vmin",
+      width: "104vmin"
       })
    }
 })
@@ -254,3 +284,220 @@ $("#castle6").click(()=>{
 //     break;
 //   }
 // }
+// $("#finishButton").click(()=>{
+//    $("#finishButton").css("display","none");
+//    $("#castle1").removeClass("castleHover")
+//    castleTag[1]=1
+//    tempVar=0
+//    for(var i=1;i<=6;i++){
+//      if(castleTag[i]==1){
+//         tempVar++
+//      }
+//      if(tempVar==6){
+//        castleTag[0]=1
+//      }
+//    }
+//    TweenMax.to("#castle1",3,{
+//    position: "absolute",
+//    transform: "rotate(0deg)",
+//    top: "0",
+//    left: "0"
+//    })
+//    if(castleTag[0]==1){
+//       TweenMax.to(".castle",1,{
+//       delay: 4,
+//       display: "none",
+//       })
+//       TweenMax.to(".map",3,{
+//       delay: 3,
+//       display: "flex",
+//       opacity: 1
+//       })
+//       TweenMax.to(".map",3,{
+//       delay: 5,
+//       height: "65vmin",
+//       width: "104vmin"
+//       })
+//    }
+//    $("#castle2").removeClass("castleHover")
+//    castleTag[2]=1
+//    tempVar=0
+//    for(var i=1;i<=6;i++){
+//      if(castleTag[i]==1){
+//         tempVar++
+//      }
+//      if(tempVar==6){
+//        castleTag[0]=1
+//      }
+//    }
+//    TweenMax.to("#castle2",3,{
+//    position: "absolute",
+//    transform: "rotate(0deg)",
+//    top: "-1.2vmin",
+//    left: "21.5vmin"
+//    })
+//    if(castleTag[0]==1){
+//       TweenMax.to(".castle",1,{
+//       delay: 4,
+//       display: "none",
+//       })
+//       TweenMax.to(".map",3,{
+//       delay: 3,
+//       display: "flex",
+//       opacity: 1
+//       })
+//       TweenMax.to(".map",3,{
+//       delay: 5,
+//       height: "65vmin",
+//       width: "104vmin"
+//       })
+//    }
+//   $("#castle3").removeClass("castleHover")
+//    castleTag[3]=1
+//    tempVar=0
+//    for(var i=1;i<=6;i++){
+//      if(castleTag[i]==1){
+//         tempVar++
+//      }
+//      if(tempVar==6){
+//        castleTag[0]=1
+//      }
+//    }
+//    TweenMax.to("#castle3",3,{
+//    position: "absolute",
+//    transform: "rotate(0deg)",
+//    top: "-0.7vmin",
+//    left: "42vmin"
+//    })
+//    if(castleTag[0]==1){
+//       TweenMax.to(".castle",1,{
+//       delay: 4,
+//       display: "none",
+//       })
+//       TweenMax.to(".map",3,{
+//       delay: 3,
+//       display: "flex",
+//       opacity: 1
+//       })
+//       TweenMax.to(".map",3,{
+//       delay: 5,
+//       height: "65vmin",
+//       width: "104vmin"
+//       })
+//    }
+//   $("#castle4").removeClass("castleHover")
+//    castleTag[4]=1
+//    tempVar=0
+//    for(var i=1;i<=6;i++){
+//      if(castleTag[i]==1){
+//         tempVar++
+//      }
+//      if(tempVar==6){
+//        castleTag[0]=1
+//      }
+//    }
+//    TweenMax.to("#castle4",3,{
+//    width: "38vmin",
+//    position: "absolute",
+//    transform: "rotate(0deg)",
+//    top: "22vmin",
+//    left: "-4.5vmin"
+//    })
+//    if(castleTag[0]==1){
+//      TweenMax.to(".castle",1,{
+//       delay: 4,
+//       display: "none",
+//       })
+//       TweenMax.to(".map",3,{
+//       delay: 3,
+//       display: "flex",
+//       opacity: 1
+//       })
+//       TweenMax.to(".map",3,{
+//       delay: 5,
+//       height: "65vmin",
+//       width: "104vmin"
+//       })
+//    }
+//   $("#castle5").removeClass("castleHover")
+//    castleTag[5]=1
+//    tempVar=0
+//    for(var i=1;i<=6;i++){
+//      if(castleTag[i]==1){
+//         tempVar++
+//      }
+//      if(tempVar==6){
+//        castleTag[0]=1
+//      }
+//    }
+//    TweenMax.to("#castle5",3,{
+//    width: "width: 31vmin",
+//    position: "absolute",
+//    transform: "rotate(0deg)",
+//    top: "22vmin",
+//    left: "20vmin"
+//    })
+//    if(castleTag[0]==1){
+//       TweenMax.to(".castle",1,{
+//       delay: 4,
+//       display: "none",
+//       })
+//       TweenMax.to(".map",3,{
+//       delay: 3,
+//       display: "flex",
+//       opacity: 1
+//       })
+//       TweenMax.to(".map",3,{
+//       delay: 5,
+//       height: "65vmin",
+//       width: "104vmin"
+//       })
+//    }
+//   $("#castle6").removeClass("castleHover")
+//    castleTag[6]=1
+//    tempVar=0
+//    for(var i=1;i<=6;i++){
+//      if(castleTag[i]==1){
+//         tempVar++
+//      }
+//      if(tempVar==6){
+//        castleTag[0]=1
+//      }
+//    }
+//    TweenMax.to("#castle6",3,{
+//    width: "35vmin",
+//    position: "absolute",
+//    transform: "rotate(0deg)",
+//    top: "24.8vmin",
+//    left: "39.2vmin"
+//    })
+//    if(castleTag[0]==1){
+//       TweenMax.to(".castle",1,{
+//       delay: 4,
+//       display: "none",
+//       })
+//       TweenMax.to(".map",3,{
+//       delay: 3,
+//       display: "flex",
+//       opacity: 1
+//       })
+//       TweenMax.to(".map",3,{
+//       delay: 5,
+//       height: "65vmin",
+//       width: "104vmin"
+//       })
+//    }
+// })
+$("#finishButton").click(()=>{
+   $("#finishButton").css("display","none");
+      TweenMax.to(".castle",1,{
+       opacity: "0"
+      })
+      $(".map").css("height","65vmin");
+      $(".map").css("width","104vmin");
+      TweenMax.to(".map",3,{
+      delay: 2,
+      display: "flex",
+      opacity: "1"
+      })
+})
