@@ -1,35 +1,39 @@
-$(document).ready(function(){
-    var lampswitch =0;
-    $(".lamp img").click(function(){
-        console.log("555")
-        if( lampswitch  == 0){
-            lampswitch  = 1;
-        }
-        else{lampswitch  = 0;}
-        if( lampswitch  == 0){
-            $(".lampcontroll").css({opacity:"0"});
-            $(".largetitle").css({display:"none"});
-        }else{
-            $(".lampcontroll").css({opacity:"0.6"});
-            $(".largetitle").css({display:"inline-block"});
-        }
-    })
-    $(".scrollbtn img").click(function(){
-        /*
-        $(".scrollbtn img").css({
-            left: '100%',
-            "-webkit-transform": "rotate(20deg)",
-            "-moz-transform": "rotate(20deg)",
-            "transform":"rotate(20deg)"
-        });*/
-    $(".largetitle").css({display:"none"});
-    $(".scrollbtn img").fadeOut(2200);
-    $(".lamp img").fadeOut(2200);
-    $(".scroll").fadeIn(2200);
-    $(".l-pic-index").animate({left:"0%"},2700);
-    $(".r-pic-index").animate({left:"93%"},2700);
-    $(".l-bg-index").animate({'width':'43%',right:'50%'},2700);
-    $(".r-bg-index").animate({'width':'43%',left:'50%'},2700,function(){
+$(document).ready(function(){ 
+   var lampswitch=1;
+   $(".lamp img").click(function(){
+      if( lampswitch  == 0){
+         lampswitch  = 1;
+      }
+      else{lampswitch  = 0;}
+      if( lampswitch  == 0){
+         loop();
+         $(".lampcontroll").css({opacity:"0"});
+         $(".largetitle").css({display:"none"});
+         $(".scrollbtn").css({"z-index":"1"});
+      }else{
+         noLoop();
+         $(".lampcontroll").css({opacity:"0.6"});
+         $(".largetitle").css({display:"inline-block"});
+         $(".scrollbtn").css({"z-index":"0"});
+      }
+   })
+   $(".scrollbtn img").click(function(){
+      /*
+      $(".scrollbtn img").css({
+         left: '100%',
+         "-webkit-transform": "rotate(20deg)",
+         "-moz-transform": "rotate(20deg)",
+         "transform":"rotate(20deg)"
+      });*/
+   $(".largetitle").css({display:"none"});
+   $(".scrollbtn img").fadeOut(2200);
+   $(".lamp img").fadeOut(2200);
+   $("#drawContainer").fadeOut(2200);
+   $(".scroll").fadeIn(2200);
+   $(".l-pic-index").animate({left:"0%"},2700);
+   $(".r-pic-index").animate({left:"93%"},2700);
+   $(".l-bg-index").animate({'width':'43%',right:'50%'},2700);
+   $(".r-bg-index").animate({'width':'43%',left:'50%'},2700,function(){
           $(".main-index").fadeIn(800);
           setTimeout(function(){ 
             $(".main-index").css({
@@ -237,3 +241,21 @@ $("#castle6").click(()=>{
       })
    }
 })
+
+let bg;
+function preload(){
+  bg = loadImage('background.jpg');
+}
+
+function setup() {
+  let myCanvas = createCanvas(1000, 400);
+  myCanvas.parent('drawContainer');
+  background(bg);
+  noLoop();
+}
+
+function draw() {
+	noStroke();
+	fill((mouseX/3)%270,(255-mouseY/2)%270,(mouseX/3+mouseY/2)%270);
+	ellipse(mouseX, mouseY, 20, 20);
+}
