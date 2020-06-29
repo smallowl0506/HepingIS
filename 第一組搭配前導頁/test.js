@@ -10,11 +10,13 @@ $(document).ready(function(){
          $(".lampcontroll").css({opacity:"0"});
          $(".largetitle").css({display:"none"});
          $(".scrollbtn").css({"z-index":"1"});
+         $("#drawContainer").css({"z-index":"2"});
       }else{
          noLoop();
          $(".lampcontroll").css({opacity:"0.6"});
          $(".largetitle").css({display:"inline-block"});
          $(".scrollbtn").css({"z-index":"0"});
+         $("#drawContainer").css({"z-index":"0"});
       }
    })
    $(".scrollbtn img").click(function(){
@@ -251,6 +253,7 @@ function setup() {
   let myCanvas = createCanvas(1000, 400);
   myCanvas.parent('drawContainer');
   background(bg);
+  cursor("brush.png",10,100);
   noLoop();
 }
 
