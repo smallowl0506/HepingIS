@@ -4,19 +4,26 @@ $(document).ready(function(){
       if( lampswitch  == 0){
          lampswitch  = 1;
       }
-      else{lampswitch  = 0;}
+      else{
+         lampswitch  = 0;
+      }
       if( lampswitch  == 0){
-         loop();
+         draw.loop();
+         mural.loop();
          $(".lampcontroll").css({opacity:"0"});
          $(".largetitle").css({display:"none"});
          $(".scrollbtn").css({"z-index":"1"});
          $("#drawContainer").css({"z-index":"2"});
+         $("#muralContainer").css({"z-index":"2"});
+         
       }else{
-         noLoop();
+         draw.noLoop();
+         mural.noLoop();
          $(".lampcontroll").css({opacity:"0.6"});
          $(".largetitle").css({display:"inline-block"});
          $(".scrollbtn").css({"z-index":"0"});
          $("#drawContainer").css({"z-index":"0"});
+         $("#muralContainer").css({"z-index":"0"});
       }
    })
    $(".scrollbtn img").click(function(){
@@ -244,21 +251,63 @@ $("#castle6").click(()=>{
    }
 })
 
-let bg;
-function preload(){
-  bg = loadImage('background.jpg');
-}
 
-function setup() {
-  let myCanvas = createCanvas(1000, 400);
-  myCanvas.parent('drawContainer');
-  background(bg);
-  cursor("brush.png",10,100);
-  noLoop();
-}
+const s1 = ( p1 ) => {
+   let bg;
 
-function draw() {
-	noStroke();
-	fill((mouseX/3)%270,(255-mouseY/2)%270,(mouseX/3+mouseY/2)%270);
-	ellipse(mouseX, mouseY, 20, 20);
-}
+   p1.preload=function(){
+        bg = p1.loadImage('background.jpg');
+   };
+
+   p1.setup = function() {
+      p1.createCanvas(1000, 400);
+      p1.background(bg);
+      p1.cursor("brush.png",10,100);
+      p1.noLoop();
+   };
+ 
+   p1.draw = function() {
+      p1.noStroke();
+      p1.fill((p1.mouseX/3)%270,(255-p1.mouseY/2)%270,(p1.mouseX/3+p1.mouseY/2)%270);
+      p1.ellipse(p1.mouseX, p1.mouseY, 20, 20);
+   };
+ };
+ 
+ let draw = new p5(s1,'drawContainer');
+
+
+const s2 = ( p2 ) => {
+   let lampswitch ;
+   let muralswitch ;
+
+   let draft, ready;
+   p2.preload=function(){
+      ready = p2.loadImage("上色圖4.jpg");
+      draft = p2.loadImage("黑白圖4.jpg");
+   };
+
+   p2.setup = function() {
+     p2.createCanvas(500,280);
+     p2.noCursor();
+     p2.cursor("brush.png",10,70);
+     p2.image(ready, 0, 0,500,280);
+     p2.image(draft, 0, 0,500,280);
+     ready.resize(500,280);
+     draft.resize(500,280);  
+     lampswitch = p2.select(".lamp img");
+     muralswitch = 0;
+     lampswitch.mouseClicked(function(){
+     (muralswitch == 0)? (muralswitch = 1) : (muralswitch = 0)
+     });
+   };
+ 
+   p2.mouseDragged = function() {
+      console.log(muralswitch)
+      if (muralswitch==0)
+      {
+         p2.copy( ready, p2.mouseX, p2.mouseY, 20, 20, p2.mouseX, p2.mouseY, 20, 20);
+      }
+   };
+ };
+ 
+ let mural = new p5(s2,'muralContainer');

@@ -713,3 +713,10 @@ html,body{
     padding: 0;
     z-index: 0;
   }
+
+  #muralContainer {
+    position: absolute;
+    top: 5%;
+    left: 7%;
+    z-index: 0;
+  }
