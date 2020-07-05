@@ -1,11 +1,15 @@
+var muralswitch;
 $(document).ready(function(){ 
    var lampswitch=1;
+   muralswitch = 1;
    $(".lamp img").click(function(){
       if( lampswitch  == 0){
          lampswitch  = 1;
+         muralswitch = 1;
       }
       else{
          lampswitch  = 0;
+         muralswitch = 0;
       }
       if( lampswitch  == 0){
          draw.loop();
@@ -277,9 +281,6 @@ const s1 = ( p1 ) => {
 
 
 const s2 = ( p2 ) => {
-   let lampswitch ;
-   let muralswitch ;
-
    let draft, ready;
    p2.preload=function(){
       ready = p2.loadImage("上色圖4.jpg");
@@ -294,15 +295,10 @@ const s2 = ( p2 ) => {
      p2.image(draft, 0, 0,500,280);
      ready.resize(500,280);
      draft.resize(500,280);  
-     lampswitch = p2.select(".lamp img");
-     muralswitch = 0;
-     lampswitch.mouseClicked(function(){
-     (muralswitch == 0)? (muralswitch = 1) : (muralswitch = 0)
-     });
    };
  
    p2.mouseDragged = function() {
-      console.log(muralswitch)
+      console.log(muralswitch);
       if (muralswitch==0)
       {
          p2.copy( ready, p2.mouseX, p2.mouseY, 20, 20, p2.mouseX, p2.mouseY, 20, 20);
