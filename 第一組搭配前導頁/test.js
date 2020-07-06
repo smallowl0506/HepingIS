@@ -290,7 +290,7 @@ const s2 = ( p2 ) => {
    p2.setup = function() {
      p2.createCanvas(500,280);
      p2.noCursor();
-     p2.cursor("brush.png",10,70);
+     p2.cursor("brush2.png",10,10);
      p2.image(ready, 0, 0,500,280);
      p2.image(draft, 0, 0,500,280);
      ready.resize(500,280);
