@@ -80,6 +80,11 @@ function setup() {
          window.location = "https://smallowl0506.github.io/HepingIS/%E5%9C%96%E6%9B%B8%E5%AE%A4_%E5%B0%88%E9%A1%8C/index.html"
       }, 5000);   
     }
+    if(res=="link"){
+      setTimeout(function(){
+         window.location = "https://smallowl0506.github.io/HepingIS/%E7%B6%B2%E9%A0%81%E9%80%A3%E7%B5%90%E5%AE%A4/dist/index.html"
+      }, 5000);   
+    }
     user_input.value(input);
     let reply = bot.reply("local-user",input);
     var a = Promise.resolve(reply);
@@ -138,6 +143,11 @@ function setup() {
     if(res=="library"){
       setTimeout(function(){
          window.location = "https://smallowl0506.github.io/HepingIS/%E5%9C%96%E6%9B%B8%E5%AE%A4_%E5%B0%88%E9%A1%8C/index.html"
+      }, 5000);   
+    }
+    if(res=="link"){
+      setTimeout(function(){
+         window.location = "https://smallowl0506.github.io/HepingIS/%E7%B6%B2%E9%A0%81%E9%80%A3%E7%B5%90%E5%AE%A4/dist/index.html"
       }, 5000);   
     }
     let reply = bot.reply("local-user",input);
