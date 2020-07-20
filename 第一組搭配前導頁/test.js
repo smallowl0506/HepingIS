@@ -283,8 +283,8 @@ const s1 = ( p1 ) => {
 const s2 = ( p2 ) => {
    let draft, ready;
    p2.preload=function(){
-      ready = p2.loadImage("上色圖4.jpg");
-      draft = p2.loadImage("黑白圖4.jpg");
+      ready = p2.loadImage("上色1.jpg");
+      draft = p2.loadImage("黑白1.jpg");
    };
 
    p2.setup = function() {
@@ -307,3 +307,10 @@ const s2 = ( p2 ) => {
  };
  
  let mural = new p5(s2,'muralContainer');
+
+ $(document).ready(function() {
+   $('#push').on('click',function(){
+     $('#push, #pushed-right-1, #pushed-right-2, #pushed-right-3, #pushed-right-4').toggleClass('move');
+     $('#push').toggleClass('rotate');
+   });
+ });       
