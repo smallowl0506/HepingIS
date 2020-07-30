@@ -7,6 +7,8 @@ html, body {
   width: 100%;
   height: 100%;
   margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 body {
@@ -29,15 +31,15 @@ body {
 .title {
   background-color: rgba(0, 0, 0, 0.85);
   text-align: center;
-  font-size: 2.5vmin;
+  font-size: 3vmin;
   color: white;
   -webkit-box-flex: 1;
           flex: 1;
   padding: 20px;
 }
 .title h1 {
-  margin-top: 10px;
-  margin-bottom: 5px;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 .title p {
   margin-top: 0;
@@ -61,38 +63,17 @@ body {
           justify-content: center;
   align-content: center;
   padding-left: 50px;
+  padding-right: 50px;
 }
 .content .part {
   -webkit-box-flex: 1;
           flex: 1;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 .content .part a {
   background-color: white;
   color: black;
   text-decoration: none;
-}
-.content .backtoindex {
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  position: fixed;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-          align-items: center;
-  font-size: 2.5vmin;
-  right: 0;
-  bottom: 0;
-  padding: 0;
-  margin: 0;
-  width: 15vmin;
-  height: 10vmin;
-}
-.content .backtoindex a {
-  text-decoration: none;
-  color: white;
 }
 
 #staff {
@@ -105,5 +86,9 @@ body {
 
 .title1, .title2, .title3, .title4, .title5 {
   margin: 20px;
-  margin-top: 50px;
+  margin-top: 60px;
+}
+
+iframe {
+  width: 100%;
 }
