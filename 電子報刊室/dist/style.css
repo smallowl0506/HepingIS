@@ -31,7 +31,7 @@ body {
 .title {
   background-color: rgba(0, 0, 0, 0.85);
   text-align: center;
-  font-size: 3vmin;
+  font-size: 3.5vmin;
   color: white;
   -webkit-box-flex: 1;
           flex: 1;
@@ -64,6 +64,7 @@ body {
   align-content: center;
   padding-left: 50px;
   padding-right: 50px;
+  font-size: 3vmin;
 }
 .content .part {
   -webkit-box-flex: 1;
@@ -81,7 +82,6 @@ body {
   background-color: transparent;
   cursor: pointer;
   text-decoration: none;
-  font-size: 18px;
 }
 
 .title1, .title2, .title3, .title4, .title5 {
@@ -91,4 +91,11 @@ body {
 
 iframe {
   width: 100%;
+  max-width: 800px;
+}
+
+@media only screen and (orientation: landscape) {
+  iframe {
+    width: 80%;
+  }
 }
