@@ -1,5 +1,5 @@
-# 數位故事館測試_歷史廳7版(sweetalert測試)
+# 數位故事館測試_歷史廳8版(RWD版本)
 
-A Pen created on CodePen.io. Original URL: [https://codepen.io/Smallowl/pen/BaorgZV](https://codepen.io/Smallowl/pen/BaorgZV).
+A Pen created on CodePen.io. Original URL: [https://codepen.io/Smallowl/pen/mdVZjqL?editors=0100).
 
 
