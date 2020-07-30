@@ -172,8 +172,8 @@ html, body {
   .content {
     background-color: rgba(0, 0, 0, 0.7);
     position: relative;
-    -webkit-box-flex: 10;
-            flex: 10;
+    -webkit-box-flex: 4;
+            flex: 4;
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: horizontal;
