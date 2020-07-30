@@ -296,7 +296,6 @@ html, body {
 }
 @media only screen and (orientation: portrait) {
   .content {
-    background-color: rgba(0, 0, 0, 0.7);
     position: relative;
     -webkit-box-flex: 10;
             flex: 10;
@@ -352,7 +351,7 @@ html, body {
   }
   .content .scrollitem .intro {
     position: absolute;
-    font-size: 1.7vmin;
+    font-size: 1.6vmin;
     color: black;
     left: 42%;
     top: 40%;
