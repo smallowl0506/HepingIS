@@ -1,16 +1,24 @@
 /* Docs sample */
 
-body{
+html,body{
 	background: url('back.jpg') no-repeat center center fixed;
 	background-size: cover;
-	margin:0;
-	padding:0;
-	overflow:hidden;
+	margin: 0;
+	padding: 0;
+	/* add */
+	height: 800px;
+	width: 100%;
+	position: relative;
+	/* add */
+	overflow-x: hidden;
 }
 
 .title {
 	background-color: rgba(0, 0, 0, 0.7);
 	text-align: center;
+	/* add */
+	width: 100%;
+	/* add */
 	font-size: 2.5vmin;
 	color: white;
 	-webkit-box-flex: 1;
@@ -23,9 +31,16 @@ body{
 }
 
 #canvas{
-	width: 960px;
+	/* width: 960px; */
 	height: 600px;
-	margin-left: 300px ;
+	/* margin-left: 300px ;*/
+	/* add */
+	width: 60%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+	/* add */
 }
 
 #book-zoom{
@@ -188,4 +203,33 @@ body{
 	cursor:pointer;
 	-webkit-border-image: url(../pics/tab-hover.png) 5 20 5 20 repeat stretch;
 
+}
+
+@media only screen and (max-width: 1200px){
+	
+	html,body{
+	background: url('back.jpg') no-repeat center center fixed;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+	/* add */
+	height: 1400px;
+	width: 100%;
+	position: relative;
+	/* add */
+	overflow-x: hidden;
+	}
+
+	#canvas{
+	/* width: 960px; */
+	height: 600px;
+	/* margin-left: 300px ;*/
+	/* add */
+	width: 60%;
+	left: 32.5%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+	/* add */
+	}
 }
