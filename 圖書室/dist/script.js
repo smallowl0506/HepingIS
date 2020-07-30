@@ -1,14 +1,3 @@
-var percent = 0;
-
-var timer = setInterval(function () {
-  $(".bar").css("width", percent + "%");
-  percent += 1;
-  if (percent > 102) {
-    $(".pageLoading").addClass("complete");
-    clearInterval(timer);
-  }
-}, 20);
-
 $(".scrollitem1").hover(
   function () {
     $(".title h1").text("圖書室");
@@ -92,24 +81,3 @@ $(".scrollitem4").hover(
     TweenMax.to(".scrolltitletext4",0.1,{opacity: 1})
   }
 );
-
-// $(".scrollitem5").hover(
-//   function () {
-//     $(".title h1").text("歷史發展廳");
-//     $(".title p").css("font-size","4.5vmin");
-//     $(".title p").text("光復迄今的發展：從海洋產業到地方創生");
-//     TweenMax.to(".scrollitem5",3,{width: "100%"})
-//     TweenMax.to(".intro5,.year5,.leftpicture5,.leftpicturetext5",3,{opacity: 1})
-//     TweenMax.to(".scrolltitletext5",0.1,{opacity: 0})
-//   },
-//   function () {
-//     $(".title h1").text("歷史發展廳");
-//     $(".title p").css("font-size","initial");
-//     $(".title p").text(
-//       "本廳根據時間軸由最早雞籠的原住民、大航海時代，經過西班牙、荷蘭、明鄭、清代、日本殖民，到戰後國府各個階段本館都有豐富的圖文，並且都有嚴格的學術研究依據，請點選下列各展室進入參觀。"
-//     );
-//     TweenMax.to(".scrollitem5",3,{width: "5%"})
-//     TweenMax.to(".intro5,.year5,.leftpicture5,.leftpicturetext5",0.1,{opacity: 0})
-//     TweenMax.to(".scrolltitletext5",0.1,{opacity: 1})
-//   }
-// );
