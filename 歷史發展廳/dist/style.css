@@ -11,14 +11,6 @@ html, body {
 
 .webBody {
   overflow: hidden;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -30,9 +22,10 @@ html, body {
   text-align: center;
   font-size: 3vmin;
   color: white;
-  -webkit-box-flex: 1;
-          flex: 1;
   padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 30vmin;
 }
 .title h1 {
   margin-top: 0px;
@@ -47,25 +40,21 @@ html, body {
 }
 
 .content {
-  position: relative;
-  -webkit-box-flex: 4;
-          flex: 4;
+  width: 100%;
+  height: 300vmin;
   display: -webkit-box;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-          flex-direction: row;
+          flex-direction: column;
   -webkit-box-pack: space-evenly;
           justify-content: space-evenly;
-  align-content: center;
-  overflow: hidden;
+  -webkit-box-align: center;
+          align-items: center;
 }
 .content .scrollitem {
   position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  height: 60%;
+  height: 50vmin;
   width: 5%;
 }
 .content .scrollitem .scrolltitletext {
@@ -93,7 +82,7 @@ html, body {
 .content .scrollitem .leftpicturetext {
   position: absolute;
   text-align: center;
-  font-size: 2.7vmin;
+  font-size: 2.5vmin;
   top: 70%;
   left: 13%;
   height: 17%;
@@ -107,7 +96,7 @@ html, body {
   color: black;
   left: 42%;
   top: 50%;
-  height: 85%;
+  height: 88%;
   width: 45%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -116,13 +105,9 @@ html, body {
   overflow: hidden;
 }
 .content .scrollitem .intro p {
-  max-height: 200px;
   padding: 0;
   margin: 0;
   position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-60%);
-          transform: translateY(-60%);
 }
 .content .scrollitem .year {
   position: absolute;
@@ -130,9 +115,9 @@ html, body {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  height: 10vmin;
-  width: 10vmin;
-  font-size: 1.6vmin;
+  height: 8vmin;
+  width: 8vmin;
+  font-size: 2vmin;
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
   display: -webkit-box;
@@ -148,8 +133,8 @@ html, body {
 }
 .content .scrollitem .year a {
   position: absolute;
-  height: 10vmin;
-  width: 8vmin;
+  height: 8vmin;
+  width: 6vmin;
   text-decoration: none;
   color: white;
   display: -webkit-box;
@@ -158,6 +143,7 @@ html, body {
           justify-content: center;
   -webkit-box-align: center;
           align-items: center;
+  padding: 1vmin;
 }
 .content .scrollitem img {
   position: absolute;
@@ -294,7 +280,44 @@ html, body {
     display: initial;
   }
 }
-@media only screen and (orientation: portrait) {
+@media only screen and (orientation: landscape) {
+  .webBody {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: url(https://img.onl/DCJmru);
+  }
+
+  .title {
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    font-size: 3vmin;
+    color: white;
+    -webkit-box-flex: 1;
+            flex: 1;
+    padding: 20px;
+  }
+  .title h1 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 6vmin;
+  }
+  .title p {
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
   .content {
     position: relative;
     -webkit-box-flex: 4;
@@ -306,19 +329,21 @@ html, body {
             flex-direction: row;
     -webkit-box-pack: space-evenly;
             justify-content: space-evenly;
-    align-content: center;
+    -webkit-box-align: initial;
+            align-items: initial;
+    overflow: hidden;
   }
   .content .scrollitem {
     position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    height: 30%;
+    height: 60%;
     width: 5%;
   }
   .content .scrollitem .scrolltitletext {
     position: absolute;
-    font-size: 1.8vmin;
+    font-size: 2.6vmin;
     font-weight: bolder;
     top: 50%;
     left: 50%;
@@ -341,7 +366,7 @@ html, body {
   .content .scrollitem .leftpicturetext {
     position: absolute;
     text-align: center;
-    font-size: 2vmin;
+    font-size: 2.5vmin;
     top: 70%;
     left: 13%;
     height: 17%;
@@ -351,11 +376,11 @@ html, body {
   }
   .content .scrollitem .intro {
     position: absolute;
-    font-size: 1.6vmin;
+    font-size: 2.3vmin;
     color: black;
     left: 42%;
-    top: 40%;
-    height: 100%;
+    top: 50%;
+    height: 85%;
     width: 45%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
@@ -364,13 +389,9 @@ html, body {
     overflow: hidden;
   }
   .content .scrollitem .intro p {
-    max-height: 200px;
     padding: 0;
     margin: 0;
     position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-60%);
-            transform: translateY(-60%);
   }
   .content .scrollitem .year {
     position: absolute;
@@ -378,9 +399,9 @@ html, body {
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    height: 6vmin;
-    width: 6vmin;
-    font-size: 1vmin;
+    height: 10vmin;
+    width: 10vmin;
+    font-size: 2vmin;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
     display: -webkit-box;
@@ -396,8 +417,8 @@ html, body {
   }
   .content .scrollitem .year a {
     position: absolute;
-    height: 6vmin;
-    width: 4vmin;
+    height: 10vmin;
+    width: 8vmin;
     text-decoration: none;
     color: white;
     display: -webkit-box;
