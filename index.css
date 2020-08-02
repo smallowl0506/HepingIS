@@ -197,7 +197,7 @@ html,body{
   .HorizontalContainer{
     display: flex;
     flex-direction: row;
-    height: 90%;
+    height: 80%;
   }
 
   .all{
@@ -214,6 +214,7 @@ html,body{
     display:flex;
     flex-direction: column;
     height: 90%;
+    min-width: 625px;
   }
   .map a{
     display:flex;
