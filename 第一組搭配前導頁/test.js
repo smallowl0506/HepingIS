@@ -2,6 +2,35 @@ var muralswitch;
 $(document).ready(function(){ 
    var lampswitch=1;
    muralswitch = 1;
+
+   var pr1 = document.getElementById("pr1"); 
+   $(".lamp img").hover(function(){
+      pr1.setAttribute("data-balloon-visible", "");},
+      function(){
+         pr1.removeAttribute("data-balloon-visible")
+   });
+
+   var pr2 = document.getElementById("pr2"); 
+   $("#drawContainer").hover(function(){
+      pr2.setAttribute("data-balloon-visible", "");},
+      function(){
+         pr2.removeAttribute("data-balloon-visible")
+   });
+
+   var pr3 = document.getElementById("pr3"); 
+   $("#muralContainer").hover(function(){
+      pr3.setAttribute("data-balloon-visible", "");},
+      function(){
+         pr3.removeAttribute("data-balloon-visible")
+   });
+   
+   var pr4 = document.getElementById("pr4"); 
+   $(".scrollbtn img").hover(function(){
+      pr4.setAttribute("data-balloon-visible", "");},
+      function(){
+         pr4.removeAttribute("data-balloon-visible")
+   });
+
    $(".lamp img").click(function(){
       if( lampswitch  == 0){
          lampswitch  = 1;
@@ -29,7 +58,7 @@ $(document).ready(function(){
          $("#drawContainer").css({"z-index":"0"});
          $("#muralContainer").css({"z-index":"0"});
       }
-   })
+   });
    $(".scrollbtn img").click(function(){
       /*
       $(".scrollbtn img").css({
