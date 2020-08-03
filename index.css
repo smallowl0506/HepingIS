@@ -197,7 +197,7 @@ html,body{
   .HorizontalContainer{
     display: flex;
     flex-direction: row;
-    height: 90%;
+    height: 80%;
   }
 
   .all{
@@ -214,6 +214,7 @@ html,body{
     display:flex;
     flex-direction: column;
     height: 90%;
+    min-width: 625px;
   }
   .map a{
     display:flex;
@@ -470,7 +471,7 @@ html,body{
 }
 .slide > div {
   width: 100%;
-  height: 110%;
+  height: 150%;
   background-size: cover;
   position: absolute;
   animation: slide 40s infinite;
@@ -478,7 +479,7 @@ html,body{
 }
 
 .slide>div>img{
-  height: 100%;
+  height: 110%;
 }
 
 .slide > div:nth-child(2) {
@@ -566,4 +567,17 @@ html,body{
   border-width: 15px;
   background-size: auto 115%;
   background-position:center;
+}
+
+@media screen and (orientation: portrait) {
+  html{
+      width : 100vmin;
+      height : 100vmax;
+  }
+  body{
+      width : 100vmin;
+      height : 100vmax;
+      transform-origin: top left;
+      transform: rotate(90deg) translate(0,-100vmin);
+  }
 }

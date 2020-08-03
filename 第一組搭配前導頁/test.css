@@ -726,7 +726,7 @@ html,body{
     font-family: 微軟正黑體;
     position: relative;
     top: 15%;
-    left: 45%;
+    left: 42%;
   }
 
   ul.menu li, ul.menu li .sub-menu {
@@ -795,19 +795,19 @@ html,body{
     transform: rotate(-360deg);
   }
    
-  ul.menu li#pushed-right-1.move {
+  ul.menu li#pushed-right-1 {
     left: 100px;
   }
 
-  ul.menu li#pushed-right-2.move {
+  ul.menu li#pushed-right-2 {
     left: 200px;
   }
    
-  ul.menu li#pushed-right-3.move {
+  ul.menu li#pushed-right-3 {
     left: 300px;
   }
    
-  ul.menu li#pushed-right-4.move {
+  ul.menu li#pushed-right-4 {
     left: 400px;
   }
 
