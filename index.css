@@ -12,11 +12,13 @@
 
 html,body{
   height:100%;
+  width: 100%;
   overflow: hidden;
 }
 
 .sky {
   height: 100%;
+  width: 100%;
   background:url("back2.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -197,7 +199,7 @@ html,body{
   .HorizontalContainer{
     display: flex;
     flex-direction: row;
-    height: 90%;
+    height: 80%;
   }
 
   .all{
@@ -214,6 +216,7 @@ html,body{
     display:flex;
     flex-direction: column;
     height: 90%;
+    min-width: 625px;
   }
   .map a{
     display:flex;
@@ -470,7 +473,7 @@ html,body{
 }
 .slide > div {
   width: 100%;
-  height: 110%;
+  height: 150%;
   background-size: cover;
   position: absolute;
   animation: slide 40s infinite;
@@ -478,7 +481,7 @@ html,body{
 }
 
 .slide>div>img{
-  height: 100%;
+  height: 110%;
 }
 
 .slide > div:nth-child(2) {
@@ -566,4 +569,23 @@ html,body{
   border-width: 15px;
   background-size: auto 115%;
   background-position:center;
+}
+
+@media screen and (orientation: portrait) {
+  .titleText{
+    font-size: 40px;
+  }
+  .map{
+    top: 10%;
+    left: -30%;
+    width: 160%;
+    height: 60%;
+  }
+  .dock{
+    height: 200px;
+    width: 200px;
+  }
+  .dock a{
+    font-size: 33px;
+  }
 }
