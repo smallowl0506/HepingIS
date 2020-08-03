@@ -572,6 +572,7 @@ html,body{
 }
 
 @media screen and (orientation: portrait) {
+<<<<<<< HEAD
   .titleText{
     font-size: 40px;
   }
@@ -587,5 +588,16 @@ html,body{
   }
   .dock a{
     font-size: 33px;
+=======
+  html{
+      width : 100vmin;
+      height : 100vmax;
+  }
+  body{
+      width : 100vmin;
+      height : 100vmax;
+      transform-origin: top left;
+      transform: rotate(90deg) translate(0,-100vmin);
+>>>>>>> 9f782eaa6702f784e7e93f320f978b9eb6961ab2
   }
 }

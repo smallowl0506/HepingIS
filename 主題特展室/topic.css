@@ -1,7 +1,23 @@
 @charset "UTF-8";
 * {
   font-family: "微軟正黑體";
+<<<<<<< HEAD
   /*border: solid 2px black;*/
+=======
+<<<<<<< HEAD
+  /*border: solid 2px black;*/
+=======
+<<<<<<< HEAD
+  /*border: solid 2px black;*/
+=======
+<<<<<<< HEAD
+  /*border: solid 2px black;*/
+=======
+  border: solid 2px black;
+>>>>>>> 5aeea3abb9008e054ac2c96a3c5f6b4997c3587d
+>>>>>>> d67456be05adae8b1a895b709aab3a63ee5d57d1
+>>>>>>> d3f2f2b9ad69ace4d26862fda00c655ce0efc261
+>>>>>>> 9f782eaa6702f784e7e93f320f978b9eb6961ab2
 }
 
 html, body {
@@ -30,7 +46,7 @@ body {
 }
 
 .title {
-  background-color: rgba(0, 0, 0, 0.7);
+  /*background-color: rgba(0, 0, 0, 0.7);*/
   text-align: center;
   color: white;
   -webkit-box-flex: 1;
@@ -54,7 +70,7 @@ body {
 }
 
 .content {
-  background-color: rgba(0, 0, 0, 0.7);
+  /*background-color: rgba(0, 0, 0, 0.7);*/
   color: white;
   position: relative;
   -webkit-box-flex: 4;
