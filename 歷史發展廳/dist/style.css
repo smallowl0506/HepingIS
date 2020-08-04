@@ -41,7 +41,7 @@ html, body {
 
 .content {
   width: 100%;
-  height: 300vmin;
+  height: 500vmin;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
@@ -54,28 +54,32 @@ html, body {
 }
 .content .scrollitem {
   position: relative;
-  height: 50vmin;
-  width: 5%;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  height: 80vmin;
+  width: 10%;
 }
 .content .scrollitem .scrolltitletext {
   position: absolute;
-  font-size: 2.6vmin;
+  font-size: 4vmin;
   font-weight: bolder;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
+  width: 1000%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%) rotate(-90deg);
+          transform: translate(-50%, -50%) rotate(-90deg);
   z-index: 3;
+  opacity: 1;
 }
 .content .scrollitem .leftpicture {
   position: absolute;
-  top: 10%;
-  left: 13%;
-  height: 60%;
-  width: 27%;
+  top: 50%;
+  left: 0%;
+  height: 30%;
+  width: 50%;
+  -webkit-transform: translateY(-50%) rotate(-90deg);
+          transform: translateY(-50%) rotate(-90deg);
   z-index: 3;
   opacity: 0;
 }
@@ -83,23 +87,25 @@ html, body {
   position: absolute;
   text-align: center;
   font-size: 2.5vmin;
-  top: 70%;
-  left: 13%;
-  height: 17%;
-  width: 27%;
+  top: 50%;
+  left: 10%;
+  height: 10%;
+  width: 65%;
+  -webkit-transform: translateY(-50%) rotate(-90deg);
+          transform: translateY(-50%) rotate(-90deg);
   z-index: 3;
   opacity: 0;
 }
 .content .scrollitem .intro {
   position: absolute;
-  font-size: 2vmin;
+  font-size: 2.3vmin;
   color: black;
-  left: 42%;
+  left: 35%;
   top: 50%;
-  height: 88%;
-  width: 45%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  height: 50%;
+  width: 65%;
+  -webkit-transform: translateY(-50%) rotate(-90deg);
+          transform: translateY(-50%) rotate(-90deg);
   z-index: 3;
   opacity: 0;
   overflow: hidden;
@@ -113,11 +119,11 @@ html, body {
   position: absolute;
   left: 2.5%;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  height: 8vmin;
-  width: 8vmin;
-  font-size: 2vmin;
+  -webkit-transform: translateY(-50%) rotate(-90deg);
+          transform: translateY(-50%) rotate(-90deg);
+  height: 6vmin;
+  width: 6vmin;
+  font-size: 2.2vmin;
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
   display: -webkit-box;
@@ -129,11 +135,11 @@ html, body {
   text-align: center;
   z-index: 3;
   opacity: 0;
-  padding: 0.5vmin;
+  padding: 1vmin;
 }
 .content .scrollitem .year a {
   position: absolute;
-  height: 8vmin;
+  height: 6vmin;
   width: 6vmin;
   text-decoration: none;
   color: white;
@@ -281,6 +287,16 @@ html, body {
   }
 }
 @media only screen and (orientation: landscape) {
+  * {
+    font-family: "微軟正黑體";
+  }
+
+  html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
   .webBody {
     overflow: hidden;
     width: 100%;
@@ -347,6 +363,8 @@ html, body {
     font-weight: bolder;
     top: 50%;
     left: 50%;
+    width: initial;
+    text-align: center;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     -webkit-writing-mode: vertical-rl;
@@ -360,17 +378,21 @@ html, body {
     left: 13%;
     height: 60%;
     width: 27%;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     z-index: 3;
     opacity: 0;
   }
   .content .scrollitem .leftpicturetext {
     position: absolute;
     text-align: center;
-    font-size: 2.5vmin;
+    font-size: 2.7vmin;
     top: 70%;
     left: 13%;
     height: 17%;
     width: 27%;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     z-index: 3;
     opacity: 0;
   }
