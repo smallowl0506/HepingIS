@@ -18,11 +18,25 @@
 
 checkWindowdirection();
 $(window).resize(function () {
+  if ( document.body.offsetWidth >= document.body.offsetHeight ) {
+    $(".scrollitem").css("width","5%")
+  }else{
+    $(".scrollitem").css("width","10%")
+  }
   checkWindowdirection();
+});
+$( window ).on( "orientationchange", function( event ) {
+  if ( document.body.offsetWidth >= document.body.offsetHeight ) {
+    $(".scrollitem").css("width","5%")
+  }else{
+    $(".scrollitem").css("width","10%")
+  }
+  checkWindowdirection();
+  console.log("Change Direction")
 });
 
 function checkWindowdirection() {
-  if (window.screen.width >= window.screen.height) {
+  if ( document.body.offsetWidth >= document.body.offsetHeight ) {
     $(".scrollitem1").hover(
       function () {
         $(".title h1").text("歷史發展廳");
