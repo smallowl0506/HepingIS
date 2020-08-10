@@ -14,6 +14,7 @@ html,body{
   height:100%;
   width: 100%;
   overflow: hidden;
+  min-width: 625px;
 }
 
 .sky {
@@ -189,7 +190,7 @@ html,body{
     text-align: center;
     letter-spacing: 25px;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 3.5vmin;
   }
   .titleText h1 {
     text-shadow: 2px 2px 3px #ffffff;
@@ -323,7 +324,6 @@ html,body{
   flex-direction: row ;
   align-items: center;
   justify-content:center;
-  line-height:500px;
 }
 
 .center a{
@@ -341,6 +341,7 @@ html,body{
   box-sizing: border-box;
   background-color: black;
   z-index: 0;
+  line-height:500px;
 }
 
 .center1:after{
@@ -364,6 +365,7 @@ html,body{
   box-sizing: border-box;
   background-color: black;
   z-index: 0;
+  line-height:500px;
 }
 
 .center3:after{
@@ -472,8 +474,11 @@ html,body{
   border: solid 2px black;
 }
 .slide > div {
+  background-color: black;
+
   width: 100%;
-  height: 150%;
+  height: 110%;
+  transform-origin: center;
   background-size: cover;
   position: absolute;
   animation: slide 40s infinite;
@@ -481,7 +486,9 @@ html,body{
 }
 
 .slide>div>img{
+  transform: scale(1.1);
   height: 110%;
+  width: 100%;
 }
 
 .slide > div:nth-child(2) {
@@ -572,32 +579,35 @@ html,body{
 }
 
 @media screen and (orientation: portrait) {
-<<<<<<< HEAD
   .titleText{
-    font-size: 40px;
+    font-size: 3.5vmin;
   }
+
   .map{
     top: 10%;
     left: -30%;
     width: 160%;
     height: 60%;
   }
+
   .dock{
     height: 200px;
     width: 200px;
   }
+
   .dock a{
     font-size: 33px;
-=======
-  html{
-      width : 100vmin;
-      height : 100vmax;
   }
+
   body{
-      width : 100vmin;
-      height : 100vmax;
-      transform-origin: top left;
-      transform: rotate(90deg) translate(0,-100vmin);
->>>>>>> 9f782eaa6702f784e7e93f320f978b9eb6961ab2
+      width : 100%;
+      height : 100%;
   }
+}
+/*
+@media screen and (orientation: landscape) and (max-width:1000px) {
+  .titleText h1 {
+    font-size: 15vmin;
+  }
+  
 }
