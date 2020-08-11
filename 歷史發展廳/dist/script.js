@@ -113,22 +113,28 @@ checkWindowdirection();
 $(window).resize(function () {
   if (document.body.offsetWidth >= document.body.offsetHeight) {
     $(".scrollitem").css("width", "5%");
+    $(".scrolltitletext").css("opacity","1")
     $(".title h1").text("歷史發展廳");
     $(".title p").css("font-size", "3vmin");
     $(".title p").text(
     "本廳根據時間軸由最早雞籠的原住民、大航海時代，經過西班牙、荷蘭、明鄭、清代、日本殖民，到戰後國府各個階段本館都有豐富的圖文，並且都有嚴格的學術研究依據，請點選下列各展室進入參觀。"
   );
+  }else{
+    $(".scrolltitletext").css("opacity","0")
   }
   checkWindowdirection();
 });
 $(window).on("orientationchange", function (event) {
   if (document.body.offsetWidth >= document.body.offsetHeight) {
     $(".scrollitem").css("width", "5%");
+    $(".scrolltitletext").css("opacity","1")
     $(".title h1").text("歷史發展廳");
     $(".title p").css("font-size", "3vmin");
     $(".title p").text(
     "本廳根據時間軸由最早雞籠的原住民、大航海時代，經過西班牙、荷蘭、明鄭、清代、日本殖民，到戰後國府各個階段本館都有豐富的圖文，並且都有嚴格的學術研究依據，請點選下列各展室進入參觀。"
   );
+  }else{
+    $(".scrolltitletext").css("opacity","0")
   }
   checkWindowdirection();
   console.log("Change Direction");
