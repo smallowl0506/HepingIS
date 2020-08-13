@@ -156,6 +156,8 @@ function loadApp() {
 	// Create the flipbook
 
 	flipbook.turn({
+		//width: 400,
+		//height: 300,
 		elevation: 50,
 		acceleration: false,
 		gradients: true,
@@ -241,7 +243,12 @@ function loadApp() {
 
 		}
 	}
-	}). turn('page', 2);
+	}). turn('page', 1)
+	  //. turn("display","single");
+	  
+	/*$(window).resize(function(){
+         flipbook.turn("size", window.innerWidth*0.73,window.innerHeight*1.2);
+	})*/
 
 
 	$('#slider').slider('option', 'max', numberOfViews(flipbook));
