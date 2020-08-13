@@ -26,7 +26,7 @@ function changeRoom() {
       $(".verticalScrollitem .year").css("display", "flex");
       $(".verticalScrollitem .year").css("opacity", "1");
       $(".verticalScrollitem .year a").css("display","flex")
-      $(".verticalScrollitem .year a").attr("href","https://smallowl0506.github.io/HepingIS/%E5%BE%9E%E9%81%A0%E5%8F%A4%E5%88%B0%E8%BF%91%E4%B8%96/samples/docs/index.html");
+      $(".verticalScrollitem .year a").attr("href","https://smallowl0506.github.io/HepingIS/%E5%BE%9E%E9%81%A0%E5%8F%A4%E5%88%B0%E8%BF%91%E4%B8%96/test_RWD/index.html");
       $(".verticalScrollitem .leftpicture").css("opacity", "1");
       $(".verticalScrollitem .leftpicture img").attr("src", "https://img.onl/oinN3g");
       $(".verticalScrollitem .leftpicturetext").css("opacity", "1");
