@@ -50,15 +50,15 @@ html, body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
           align-items: center;
 }
 .content #selectRoom {
   position: absolute;
-  top: 5vmin;
-  width: 20vmin;
+  top: 10vmin;
+  width: 25vmin;
   height: 5vmin;
   font-size: 3vmin;
 }
@@ -69,8 +69,9 @@ html, body {
   position: relative;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+  top: 30%;
   height: 80vmin;
-  width: 100%;
+  width: 150%;
 }
 .content .verticalScrollitem .scrolltitletext {
   position: absolute;
@@ -88,39 +89,39 @@ html, body {
 .content .verticalScrollitem .leftpicture {
   position: absolute;
   top: 50%;
-  left: 0%;
-  height: 30%;
-  width: 50%;
+  left: 3%;
+  height: 40%;
+  width: 40%;
   -webkit-transform: translateY(-50%) rotate(-90deg);
           transform: translateY(-50%) rotate(-90deg);
   z-index: 3;
-  opacity: 0;
+  opacity: 1;
 }
 .content .verticalScrollitem .leftpicturetext {
   position: absolute;
   text-align: center;
-  font-size: 2.5vmin;
+  font-size: 3vmin;
   top: 50%;
-  left: 10%;
+  left: 18%;
   height: 10%;
-  width: 65%;
+  width: 40%;
   -webkit-transform: translateY(-50%) rotate(-90deg);
           transform: translateY(-50%) rotate(-90deg);
   z-index: 3;
-  opacity: 0;
+  opacity: 1;
 }
 .content .verticalScrollitem .intro {
   position: absolute;
-  font-size: 2.3vmin;
+  font-size: 3vmin;
   color: black;
-  left: 35%;
+  left: 44%;
   top: 50%;
-  height: 50%;
-  width: 65%;
+  height: 80%;
+  width: 45%;
   -webkit-transform: translateY(-50%) rotate(-90deg);
           transform: translateY(-50%) rotate(-90deg);
   z-index: 3;
-  opacity: 0;
+  opacity: 1;
   overflow: hidden;
 }
 .content .verticalScrollitem .intro p {
@@ -134,9 +135,9 @@ html, body {
   top: 50%;
   -webkit-transform: translateY(-50%) rotate(-90deg);
           transform: translateY(-50%) rotate(-90deg);
-  height: 6vmin;
-  width: 6vmin;
-  font-size: 2.2vmin;
+  height: 8vmin;
+  width: 8vmin;
+  font-size: 2.5vmin;
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
   display: none;
@@ -146,13 +147,13 @@ html, body {
           align-items: center;
   text-align: center;
   z-index: 3;
-  opacity: 0;
+  opacity: 1;
   padding: 1vmin;
 }
 .content .verticalScrollitem .year a {
   position: absolute;
-  height: 6vmin;
-  width: 6vmin;
+  height: 7vmin;
+  width: 7vmin;
   text-decoration: none;
   color: white;
   display: -webkit-box;
@@ -289,17 +290,14 @@ html, body {
           justify-content: center;
   -webkit-box-align: center;
           align-items: center;
-  font-size: 2.5vmin;
+  font-size: 3.5vmin;
   right: 0;
   bottom: 0;
   padding: 0;
   margin: 0;
-  width: 15vmin;
-  height: 10vmin;
-}
-.content .backtoindex a {
-  text-decoration: none;
-  color: white;
+  cursor: pointer;
+  width: 12vmin;
+  height: 12vmin;
 }
 
 .pageLoading {
