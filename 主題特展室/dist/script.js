@@ -8,3 +8,7 @@ var timer = setInterval(function(){
     clearInterval(timer)
   }
 },20)
+
+$(".backtoindex").click(function () {
+  window.history.back();
+});
