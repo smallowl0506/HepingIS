@@ -608,11 +608,11 @@ html,body{
 }
 @media screen and (max-width:1000px)  {
   .dock{
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
   }
   .dock a{
-    font-size: 33px;
+    font-size: 22px;
   }
 }
 

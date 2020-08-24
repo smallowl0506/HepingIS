@@ -182,3 +182,17 @@ body {
     font-size: 5vmin;
   }
 }
+
+@media screen and (max-width:1000px) {
+  .title h1 {
+    font-size: 15vmin;
+  }
+  .title p {
+    font-size: 5vmin;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .content{
+    font-size: 5vmin;
+  }
+}
