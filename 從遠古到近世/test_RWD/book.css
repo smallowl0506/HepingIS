@@ -59,7 +59,7 @@ html,body{
     height: 80vmin;
     background-color:white;
     /*line-height:300px;*/
-    font-size: 3vmin;
+    font-size: 2.5vmin;
     text-align:center;
 }
 
@@ -69,8 +69,8 @@ html,body{
 }
 
 #flipbook .page p{
-    margin: 2.4vmin; 
-    font-size: 2.2vmin;
+    margin: 2.2vmin; 
+    font-size: 2vmin;
     font-weight: 900;
     text-align: initial;
 }
@@ -133,7 +133,7 @@ html,body{
     width: 100vmin;
     height: 80vmin;
     background-color:white;
-    font-size: 3vmin;
+    font-size: 2.5vmin;
     text-align:center;
 }
 
@@ -143,8 +143,8 @@ html,body{
 }
 
 #flipbook2 .page p{
-    margin: 2.4vmin; 
-    font-size: 2.2vmin;
+    margin: 2.2vmin; 
+    font-size: 2vmin;
     font-weight: 900;
     text-align: initial;
 }
@@ -207,7 +207,7 @@ html,body{
     width: 100vmin;
     height: 80vmin;
     background-color:white;
-    font-size: 3vmin;
+    font-size: 2.5vmin;
     text-align:center;
 }
 
@@ -217,8 +217,8 @@ html,body{
 }
 
 #flipbook3 .page p{
-    margin: 2.4vmin; 
-    font-size: 2.2vmin;
+    margin: 2.2vmin; 
+    font-size: 2vmin;
     font-weight: 900;
     text-align: initial;
 }
@@ -317,7 +317,7 @@ html,body{
         width: 60vmin;
         height: 48vmin;
         background-color:white;
-        font-size: 3vmin;
+        font-size: 2.5vmin;
         text-align:center;
     }
 
@@ -327,8 +327,8 @@ html,body{
     }
 
     #flipbook .page p{
-        margin: 2.2vmin; 
-        font-size: 2vmin;
+        margin: 2vmin; 
+        font-size: 1.8vmin;
         font-weight: 900;
         text-align: initial;
     }
@@ -343,7 +343,7 @@ html,body{
         width: 60vmin;
         height: 48vmin;
         background-color:white;
-        font-size: 3vmin;
+        font-size: 2.5vmin;
         text-align:center;
     }
 
@@ -353,8 +353,8 @@ html,body{
     }
 
     #flipbook2 .page p{
-        margin: 2.2vmin; 
-        font-size: 2vmin;
+        margin: 2vmin; 
+        font-size: 1.8vmin;
         font-weight: 900;
         text-align: initial;
     }
@@ -369,7 +369,7 @@ html,body{
         width: 60vmin;
         height: 48vmin;
         background-color:white;
-        font-size: 3vmin;
+        font-size: 2.5vmin;
         text-align:center;
     }
 
@@ -379,8 +379,8 @@ html,body{
     }
 
     #flipbook3 .page p{
-        margin: 2.2vmin; 
-        font-size: 2vmin;
+        margin: 2vmin; 
+        font-size: 1.8vmin;
         font-weight: 900;
         text-align: initial;
     }
