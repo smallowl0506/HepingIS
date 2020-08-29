@@ -10,7 +10,7 @@ html,body{
 	align-items: center;*/
     background: url('back.jpg') no-repeat center center fixed;
     background-size: cover;
-	z-index: -2;
+	z-index: -3;
 }
 
 .title {
@@ -45,6 +45,7 @@ html,body{
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
+	z-index: -2;
 }
 
 #flipbook{
@@ -296,7 +297,7 @@ html,body{
         position: absolute;
         overflow-x: hidden;
         top: 8vmin;
-        height: calc(200% - 8vmin);
+        height: calc(250% - 8vmin);
         width: 100%;
         display: flex;
         flex-direction: column;
