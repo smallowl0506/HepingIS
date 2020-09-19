@@ -39,7 +39,7 @@ html,body{
     position: absolute;
     overflow-x: hidden;
     top: 8vmin;
-    height: calc(280% - 8vmin);
+    height: calc(300% - 8vmin);
     width: 100%;
 	display: flex;
 	flex-direction: column;
