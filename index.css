@@ -614,6 +614,9 @@ html,body{
   .dock a{
     font-size: 22px;
   }
+  .sky{
+    overflow-y: scroll;
+  }
 }
 
 /*
