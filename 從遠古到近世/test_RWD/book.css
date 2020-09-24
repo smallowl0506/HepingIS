@@ -30,6 +30,24 @@ html,body{
 	padding: 1vmin;
 }
 
+.hintBlockTop{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    height: 10vmin;
+    width: 10vmin;
+    top: 10vmin;
+    right: 10vmin;
+    padding: 1.5vmin;
+    font-size: 2vmin;
+    font-weight: 900;
+    text-align: center;
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	z-index: -3;
+}
+
 .title h1 {
 	margin: 0;
 	font-size: 6vmin;
