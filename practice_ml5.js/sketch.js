@@ -356,9 +356,10 @@ function draw() {
     //for interation block
     fill(255,0,255);
     ellipse(interationPosition.left,interationPosition.top,16,16);
-    let distance = dist(interationPosition.left+interationWidth/2,interationPosition.top,pose.nose.x,pose.nose.y);
+    let distance1 = dist(interationPosition.left+interationWidth/2,interationPosition.top,pose.leftWrist.x,pose.leftWrist.y);
+    let distance2 = dist(interationPosition.left+interationWidth/2,interationPosition.top,pose.rightWrist.x,pose.rightWrist.y);
     // console.log(distance);
-    if(distance<50){
+    if(distance1<50||distance2<50){
       $(".interation").css("color","red");
     }else{
       $(".interation").css("color","yellow");
@@ -367,9 +368,10 @@ function draw() {
     //for castle1 block
     fill(255,255,0);
     ellipse(castle1Position.left+castle1Width/2,castle1Position.top,16,16);
-    let distanceC1 = dist(castle1Position.left+castle1Width/2,castle1Position.top,pose.nose.x,pose.nose.y);
+    let distanceC11 = dist(castle1Position.left+castle1Width/2,castle1Position.top,pose.leftWrist.x,pose.leftWrist.y);
+    let distanceC12 = dist(castle1Position.left+castle1Width/2,castle1Position.top,pose.rightWrist.x,pose.rightWrist.y);
     // console.log(distanceC1);
-    if(distanceC1<80){
+    if(distanceC11<80||distanceC12<80){
         $("#castle1").removeClass("castleHover")
        castleTag[1]=1
        tempVar=0
@@ -408,9 +410,10 @@ function draw() {
     //for castle2 block
     fill(255,255,0);
     ellipse(castle2Position.left+castle2Width/2,castle2Position.top,16,16);
-    let distanceC2 = dist(castle2Position.left+castle2Width/2,castle2Position.top,pose.nose.x,pose.nose.y);
+    let distanceC21 = dist(castle2Position.left+castle2Width/2,castle2Position.top,pose.leftWrist.x,pose.leftWrist.y);
+    let distanceC22 = dist(castle2Position.left+castle2Width/2,castle2Position.top,pose.rightWrist.x,pose.rightWrist.y);
     // console.log(distanceC1);
-    if(distanceC2<80){
+    if(distanceC21<80||distanceC22<80){
         $("#castle2").removeClass("castleHover")
      castleTag[2]=1
      tempVar=0
@@ -449,9 +452,10 @@ function draw() {
     //for castle3 block
     fill(255,255,0);
     ellipse(castle3Position.left+castle3Width/2,castle3Position.top,16,16);
-    let distanceC3 = dist(castle3Position.left+castle3Width/2,castle3Position.top,pose.nose.x,pose.nose.y);
+    let distanceC31 = dist(castle3Position.left+castle3Width/2,castle3Position.top,pose.leftWrist.x,pose.leftWrist.y);
+    let distanceC32 = dist(castle3Position.left+castle3Width/2,castle3Position.top,pose.rightWrist.x,pose.rightWrist.y);
     // console.log(distanceC1);
-    if(distanceC3<80){
+    if(distanceC31<80||distanceC32<80){
         $("#castle3").removeClass("castleHover")
      castleTag[3]=1
      tempVar=0
@@ -490,9 +494,10 @@ function draw() {
     //for castle4 block
     fill(255,255,0);
     ellipse(castle4Position.left+castle4Width/2,castle4Position.top,16,16);
-    let distanceC4 = dist(castle4Position.left+castle4Width/2,castle4Position.top,pose.nose.x,pose.nose.y);
+    let distanceC41 = dist(castle4Position.left+castle4Width/2,castle4Position.top,pose.leftWrist.x,pose.leftWrist.y);
+    let distanceC42 = dist(castle4Position.left+castle4Width/2,castle4Position.top,pose.rightWrist.x,pose.rightWrist.y);
     // console.log(distanceC1);
-    if(distanceC4<80){
+    if(distanceC41<80||distanceC42<80){
         $("#castle4").removeClass("castleHover")
      castleTag[4]=1
      tempVar=0
@@ -532,9 +537,10 @@ function draw() {
     //for castle5 block
     fill(255,255,0);
     ellipse(castle5Position.left+castle5Width/2,castle5Position.top,16,16);
-    let distanceC5 = dist(castle5Position.left+castle5Width/2,castle5Position.top,pose.nose.x,pose.nose.y);
+    let distanceC51 = dist(castle5Position.left+castle5Width/2,castle5Position.top,pose.leftWrist.x,pose.leftWrist.y);
+    let distanceC52 = dist(castle5Position.left+castle5Width/2,castle5Position.top,pose.rightWrist.x,pose.rightWrist.y);
     // console.log(distanceC1);
-    if(distanceC5<80){
+    if(distanceC51<80||distanceC52<80){
         $("#castle5").removeClass("castleHover")
      castleTag[5]=1
      tempVar=0
@@ -574,9 +580,10 @@ function draw() {
     //for castle6 block
     fill(255,255,0);
     ellipse(castle6Position.left+castle6Width/2,castle6Position.top,16,16);
-    let distanceC6 = dist(castle6Position.left+castle6Width/2,castle6Position.top,pose.nose.x,pose.nose.y);
+    let distanceC61 = dist(castle6Position.left+castle6Width/2,castle6Position.top,pose.leftWrist.x,pose.leftWrist.y);
+    let distanceC62 = dist(castle6Position.left+castle6Width/2,castle6Position.top,pose.rightWrist.x,pose.rightWrist.y);
     // console.log(distanceC1);
-    if(distanceC6<80){
+    if(distanceC61<80||distanceC62<80){
         $("#castle6").removeClass("castleHover")
      castleTag[6]=1
      tempVar=0
@@ -616,9 +623,10 @@ function draw() {
     //for finishButton block
     fill(255,255,0);
     ellipse(finishButtonPosition.left+finishButtonWidth/2,finishButtonPosition.top,16,16);
-    let distanceFB = dist(finishButtonPosition.left+finishButtonWidth/2,finishButtonPosition.top,pose.nose.x,pose.nose.y);
+    let distanceFB1 = dist(finishButtonPosition.left+finishButtonWidth/2,finishButtonPosition.top,pose.leftWrist.x,pose.leftWrist.y);
+    let distanceFB2 = dist(finishButtonPosition.left+finishButtonWidth/2,finishButtonPosition.top,pose.rightWrist.x,pose.rightWrist.y);
     // console.log(distanceC1);
-    if(distanceFB<80){
+    if(distanceFB1<100||distanceFB2<100){
         $("#finishButton").css("display","none");
         TweenMax.to(".castle",1,{
          opacity: "0"
