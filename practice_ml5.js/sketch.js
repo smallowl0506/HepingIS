@@ -2,9 +2,10 @@ let video;
 let poseNet;
 let pose;
 let skeleton;
-let interationPosition;
-let interationWidth;
-let interationHeight;
+let isControllable = false;
+// let interationPosition;
+// let interationWidth;
+// let interationHeight;
 let castle1Position,castle2Position,castle3Position,castle4Position,castle5Position,castle6Position,finishButtonPosition;
 let castle1Width,castle2Width,castle3Width,castle4Width,castle5Width,castle6Width,finishButtonWidth;
 let castle1Height,castle2Height,castle3Height,castle4Height,castle5Height,castle6Height,finishButtonHeight;
@@ -14,9 +15,9 @@ var tempVar=0
 
 $( document ).ready(function() {
   console.log("jquery loaded!!!");
-  interationPosition = $(".interation").offset();
-  interationWidth = $(".interation").width();
-  interationHeight = $(".interation").height();
+  // interationPosition = $(".interation").offset();
+  // interationWidth = $(".interation").width();
+  // interationHeight = $(".interation").height();
   castle1Position = $("#castle1").offset();
   castle1Width = $("#castle1").width();
   castle1Height = $("#castle1").height();
@@ -266,12 +267,23 @@ $( document ).ready(function() {
         opacity: "1"
         })
   })
+  $("#controllButton").click(()=>{
+     if(isControllable){
+        isControllable = false
+        $("#controllButton").html("開啟<br>視訊互動")
+     }else{
+        isControllable = true
+        $("#controllButton").html("關閉<br>視訊互動")
+     }
+  })
 });
 
 function preload(){
   bgImg = loadImage("map.jfif",()=>{
     console.log("picture loaded!!!");
   })
+  leftHandImg = loadImage("left_hand.png");
+  rightHandImg = loadImage("right_hand.png");
 }
 
 function setup() {
@@ -328,46 +340,49 @@ function draw() {
   // background(0)
   //----------------------------------------------------------------------------------------
 
-  if (pose) {
-    let eyeR = pose.rightEye;   //右眼位置
-    let eyeL = pose.leftEye;    //左眼位置
-    let d = dist(eyeR.x, eyeR.y, eyeL.x, eyeL.y);
-    fill(255, 0, 0);
-    ellipse(pose.nose.x, pose.nose.y, d);   //鼻子位置
-    fill(0, 0, 255);
-    ellipse(pose.rightWrist.x, pose.rightWrist.y, 32);    //右手腕位置
-    ellipse(pose.leftWrist.x, pose.leftWrist.y, 32);    //左手腕位置
+  if (pose && isControllable) {
+
+    image(leftHandImg,pose.rightWrist.x, pose.rightWrist.y,80,80);
+    image(rightHandImg,pose.leftWrist.x, pose.leftWrist.y,50,50);
+    // let eyeR = pose.rightEye;   //右眼位置
+    // let eyeL = pose.leftEye;    //左眼位置
+    // let d = dist(eyeR.x, eyeR.y, eyeL.x, eyeL.y);
+    // fill(255, 0, 0);
+    // ellipse(pose.nose.x, pose.nose.y, d);   //鼻子位置
+    // fill(0, 0, 255);
+    // ellipse(pose.rightWrist.x, pose.rightWrist.y, 32);    //右手腕位置
+    // ellipse(pose.leftWrist.x, pose.leftWrist.y, 32);    //左手腕位置
     
-    for (let i = 0; i < pose.keypoints.length; i++) { //keypoint紀錄身體總共17個所有點
-      let x = pose.keypoints[i].position.x;
-      let y = pose.keypoints[i].position.y;
-      fill(0,255,0);
-      ellipse(x,y,16,16);
-    }
+    // for (let i = 0; i < pose.keypoints.length; i++) { //keypoint紀錄身體總共17個所有點
+    //   let x = pose.keypoints[i].position.x;
+    //   let y = pose.keypoints[i].position.y;
+    //   fill(0,255,0);
+    //   ellipse(x,y,16,16);
+    // }
     
-    for (let i = 0; i < skeleton.length; i++) {   //skeleton紀錄骨架位置(每兩點位置)
-      let a = skeleton[i][0];
-      let b = skeleton[i][1];
-      strokeWeight(2);
-      stroke(255);
-      line(a.position.x, a.position.y,b.position.x,b.position.y);      
-    } 
+    // for (let i = 0; i < skeleton.length; i++) {   //skeleton紀錄骨架位置(每兩點位置)
+    //   let a = skeleton[i][0];
+    //   let b = skeleton[i][1];
+    //   strokeWeight(2);
+    //   stroke(255);
+    //   line(a.position.x, a.position.y,b.position.x,b.position.y);      
+    // } 
 
     //for interation block
-    fill(255,0,255);
-    ellipse(interationPosition.left,interationPosition.top,16,16);
-    let distance1 = dist(interationPosition.left+interationWidth/2,interationPosition.top,pose.leftWrist.x,pose.leftWrist.y);
-    let distance2 = dist(interationPosition.left+interationWidth/2,interationPosition.top,pose.rightWrist.x,pose.rightWrist.y);
-    // console.log(distance);
-    if(distance1<50||distance2<50){
-      $(".interation").css("color","red");
-    }else{
-      $(".interation").css("color","yellow");
-    }
+    // fill(255,0,255);
+    // ellipse(interationPosition.left,interationPosition.top,16,16);
+    // let distance1 = dist(interationPosition.left+interationWidth/2,interationPosition.top,pose.leftWrist.x,pose.leftWrist.y);
+    // let distance2 = dist(interationPosition.left+interationWidth/2,interationPosition.top,pose.rightWrist.x,pose.rightWrist.y);
+    // // console.log(distance);
+    // if(distance1<50||distance2<50){
+    //   $(".interation").css("color","red");
+    // }else{
+    //   $(".interation").css("color","yellow");
+    // }
 
     //for castle1 block
-    fill(255,255,0);
-    ellipse(castle1Position.left+castle1Width/2,castle1Position.top,16,16);
+    // fill(255,255,0);
+    // ellipse(castle1Position.left+castle1Width/2,castle1Position.top,16,16);
     let distanceC11 = dist(castle1Position.left+castle1Width/2,castle1Position.top,pose.leftWrist.x,pose.leftWrist.y);
     let distanceC12 = dist(castle1Position.left+castle1Width/2,castle1Position.top,pose.rightWrist.x,pose.rightWrist.y);
     // console.log(distanceC1);
@@ -408,8 +423,8 @@ function draw() {
     }
 
     //for castle2 block
-    fill(255,255,0);
-    ellipse(castle2Position.left+castle2Width/2,castle2Position.top,16,16);
+    // fill(255,255,0);
+    // ellipse(castle2Position.left+castle2Width/2,castle2Position.top,16,16);
     let distanceC21 = dist(castle2Position.left+castle2Width/2,castle2Position.top,pose.leftWrist.x,pose.leftWrist.y);
     let distanceC22 = dist(castle2Position.left+castle2Width/2,castle2Position.top,pose.rightWrist.x,pose.rightWrist.y);
     // console.log(distanceC1);
@@ -450,8 +465,8 @@ function draw() {
     }
 
     //for castle3 block
-    fill(255,255,0);
-    ellipse(castle3Position.left+castle3Width/2,castle3Position.top,16,16);
+    // fill(255,255,0);
+    // ellipse(castle3Position.left+castle3Width/2,castle3Position.top,16,16);
     let distanceC31 = dist(castle3Position.left+castle3Width/2,castle3Position.top,pose.leftWrist.x,pose.leftWrist.y);
     let distanceC32 = dist(castle3Position.left+castle3Width/2,castle3Position.top,pose.rightWrist.x,pose.rightWrist.y);
     // console.log(distanceC1);
@@ -492,8 +507,8 @@ function draw() {
     }
 
     //for castle4 block
-    fill(255,255,0);
-    ellipse(castle4Position.left+castle4Width/2,castle4Position.top,16,16);
+    // fill(255,255,0);
+    // ellipse(castle4Position.left+castle4Width/2,castle4Position.top,16,16);
     let distanceC41 = dist(castle4Position.left+castle4Width/2,castle4Position.top,pose.leftWrist.x,pose.leftWrist.y);
     let distanceC42 = dist(castle4Position.left+castle4Width/2,castle4Position.top,pose.rightWrist.x,pose.rightWrist.y);
     // console.log(distanceC1);
@@ -535,8 +550,8 @@ function draw() {
     }
 
     //for castle5 block
-    fill(255,255,0);
-    ellipse(castle5Position.left+castle5Width/2,castle5Position.top,16,16);
+    // fill(255,255,0);
+    // ellipse(castle5Position.left+castle5Width/2,castle5Position.top,16,16);
     let distanceC51 = dist(castle5Position.left+castle5Width/2,castle5Position.top,pose.leftWrist.x,pose.leftWrist.y);
     let distanceC52 = dist(castle5Position.left+castle5Width/2,castle5Position.top,pose.rightWrist.x,pose.rightWrist.y);
     // console.log(distanceC1);
@@ -578,8 +593,8 @@ function draw() {
     }
 
     //for castle6 block
-    fill(255,255,0);
-    ellipse(castle6Position.left+castle6Width/2,castle6Position.top,16,16);
+    // fill(255,255,0);
+    // ellipse(castle6Position.left+castle6Width/2,castle6Position.top,16,16);
     let distanceC61 = dist(castle6Position.left+castle6Width/2,castle6Position.top,pose.leftWrist.x,pose.leftWrist.y);
     let distanceC62 = dist(castle6Position.left+castle6Width/2,castle6Position.top,pose.rightWrist.x,pose.rightWrist.y);
     // console.log(distanceC1);
@@ -621,8 +636,8 @@ function draw() {
     }
 
     //for finishButton block
-    fill(255,255,0);
-    ellipse(finishButtonPosition.left+finishButtonWidth/2,finishButtonPosition.top,16,16);
+    // fill(255,255,0);
+    // ellipse(finishButtonPosition.left+finishButtonWidth/2,finishButtonPosition.top,16,16);
     let distanceFB1 = dist(finishButtonPosition.left+finishButtonWidth/2,finishButtonPosition.top,pose.leftWrist.x,pose.leftWrist.y);
     let distanceFB2 = dist(finishButtonPosition.left+finishButtonWidth/2,finishButtonPosition.top,pose.rightWrist.x,pose.rightWrist.y);
     // console.log(distanceC1);
