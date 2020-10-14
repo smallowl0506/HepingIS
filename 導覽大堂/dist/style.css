@@ -183,6 +183,12 @@ body {
   width: 12vmin;
   height: 12vmin;
 }
+
+button{
+  height: 100%;
+  border-radius: 100%;
+}
+
 /*
 .pageLoading {
   z-index: 5;
