@@ -55,9 +55,19 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
   position: relative;
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   justify-content: center;
+=======
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+>>>>>>> 10fdbdbfb6d29db6dab312d11943e46409b6e57e
   align-content: center;
   padding-left: 25px;
   padding-right: 25px;
@@ -175,6 +185,7 @@ td:hover{
   width: 12vmin;
   height: 12vmin;
 }
+<<<<<<< HEAD
 
 .part1{
   width: 100%;
@@ -204,6 +215,8 @@ td:hover{
 
 
 
+=======
+>>>>>>> 10fdbdbfb6d29db6dab312d11943e46409b6e57e
 /*
 @media (min-height: 1920px) {
   .title h1 {
