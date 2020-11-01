@@ -12,8 +12,9 @@ let eventE = "E.XXXX活動".split("")
 // let hintR = "按滑鼠右鍵重新生成文字".split("")
 // let hintC = "按滑鼠中鍵清除所有小精靈".split("")
 // let hintD = "按鍵盤空白鍵產生軌跡(再按一次解除)".split("")
-let hint1 = "按鍵盤空白鍵(space)重新生成所有文字".split("")
-let hint2 = "本廳室所有內容尚在建置中，敬請期待!!!".split("")
+let hint1 = "按鍵盤WASD鍵或↑←↓→鍵可操作小精靈移動".split("")
+let hint2 = "按鍵盤空白鍵(space)重新生成所有文字".split("")
+let hint3 = "本廳室所有內容尚在建置中，敬請期待!!!".split("")
 let currentFrameCount
 // let hasTrail = false
 
@@ -187,5 +188,8 @@ function makeText(){
   }
   for(let i = 0 ; i<hint2.length; i++){
     textGroup.push(new Text(hint2[i],500+i*30,height/3*2+60,30) );
+  }
+  for(let i = 0 ; i<hint3.length; i++){
+    textGroup.push(new Text(hint3[i],500+i*30,height/3*2+120,30) );
   }
 }
