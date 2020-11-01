@@ -55,6 +55,16 @@ $(document).ready(function() {
   function chat(){
     let input = sbMsg;
     console.log(input);
+	if(input.indexOf("生活文化廳")!=-1){
+      setTimeout(function(){
+         window.location = "https://smallowl0506.github.io/HepingIS/%E7%94%9F%E6%B4%BB%E6%96%87%E5%8C%96%E5%BB%B3_%E5%B0%88%E9%A1%8C/"
+      }, 5000);   
+    }
+    if(input.indexOf("空間景觀廳")!=-1){
+      setTimeout(function(){
+         window.location = "https://smallowl0506.github.io/HepingIS/%E7%A9%BA%E9%96%93%E6%99%AF%E8%A7%80%E5%BB%B3_%E5%B0%88%E9%A1%8C/"
+      }, 5000);   
+    }
     if(input.indexOf("電子報刊室")!=-1){
       setTimeout(function(){
          window.location = "https://smallowl0506.github.io/HepingIS/%E9%9B%BB%E5%AD%90%E5%A0%B1%E5%88%8A%E5%AE%A4_%E5%B0%88%E9%A1%8C/dist/"
@@ -131,6 +141,16 @@ $(document).ready(function() {
       var input = speechRec.resultString;
     }
     console.log(input);
+	if(input.indexOf("生活文化廳")!=-1){
+      setTimeout(function(){
+         window.location = "https://smallowl0506.github.io/HepingIS/%E7%94%9F%E6%B4%BB%E6%96%87%E5%8C%96%E5%BB%B3_%E5%B0%88%E9%A1%8C/"
+      }, 5000);   
+    }
+    if(input.indexOf("空間景觀廳")!=-1){
+      setTimeout(function(){
+         window.location = "https://smallowl0506.github.io/HepingIS/%E7%A9%BA%E9%96%93%E6%99%AF%E8%A7%80%E5%BB%B3_%E5%B0%88%E9%A1%8C/"
+      }, 5000);   
+    }
     if(input.indexOf("電子報刊室")!=-1){
       setTimeout(function(){
          window.location = "https://smallowl0506.github.io/HepingIS/%E9%9B%BB%E5%AD%90%E5%A0%B1%E5%88%8A%E5%AE%A4_%E5%B0%88%E9%A1%8C/dist/"
