@@ -17,7 +17,7 @@ $(function(){
   AOS.init();
 })
 
-
+//語音撥放
 if(!('speechSynthesis' in window)) {
   throw alert("您的瀏覽器不支持")
 }

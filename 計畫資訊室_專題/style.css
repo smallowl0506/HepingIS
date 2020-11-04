@@ -1,5 +1,6 @@
 @charset "UTF-8";
 * {
+  user-select: none;
   font-family: "微軟正黑體";
 }
 
@@ -202,18 +203,34 @@ td:hover{
 }
 
 .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
   text-align: center;
-  line-height: 30px;
-  font-size: 30px;
-  color:#fff;
+  line-height: 20px;
+  font-size: 15px;
+  color:black;
   opacity: 1;
   background: rgb(255, 255, 255);
 }
 
 .swiper-pagination-bullet-active {
   color: #fff;
-  background: #ff0000;
-  
+  background: #0400ff;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 10px;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after{
+  background-color: rgb(255, 255, 255,0.3);
+  border-radius: 25%;
+  padding: 10px;
+}
+
+button{
+  height: 100%;
+  border-radius: 100%;
 }
 
 
