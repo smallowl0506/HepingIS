@@ -14,10 +14,12 @@ function preload(){
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  SpanXslider = createSlider(width*0.4/8,width*0.9/8,width*0.8/8,width*0.1/8)
-  SpanYslider = createSlider(height*0.4/8,height*0.9/8,height*0.8/8,height*0.1/8)
-  SpanXslider.position(10,20)
-  SpanYslider.position(10,40)
+  SpanXslider = createSlider(width*0.4/8,width*0.9/8,width*0.8/8,width*0.1/8);
+  SpanYslider = createSlider(height*0.4/8,height*0.9/8,height*0.8/8,height*0.1/8);
+  SpanXslider.position(10,40);
+  SpanYslider.position(220,40);
+  SpanXslider.id("sliderX");
+  SpanYslider.id("sliderY");
   gravity = createVector(0, 0.3);
   let img = spritesheet.get(600, 0, 300, 300);  //花瓣飄落
   // let img = spritesheet.get(250, 100, 350, 400);  //花朵飄落
@@ -50,8 +52,8 @@ function draw() {
     // fill(241, 158, 194);
     fill(0)
     textSize(16)
-    text('X方向間距', 35, 15)
-    text('Y方向間距', 35, 75)
+    text('X方向間距', 75, 25)
+    text('Y方向間距', 285, 25)
   pop()
   spanX = 0
   spanY = 0
