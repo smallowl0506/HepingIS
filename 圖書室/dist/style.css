@@ -16,7 +16,7 @@ html, body {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-image: url(https://img.onl/6Rs3gS);
+  background-image: url("BG.jfif");
 }
 
 .title {
@@ -428,7 +428,7 @@ html, body {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-image: url(https://img.onl/6Rs3gS);
+    background-image: url("BG.jfif");
   }
 
   .title {

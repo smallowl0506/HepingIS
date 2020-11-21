@@ -12,7 +12,7 @@ html, body {
 }
 
 body {
-  background-image: url(https://img.onl/FpzGf7);
+  background-image: url("BG.png");
   background-size: cover;
   background-attachment: fixed;
 }

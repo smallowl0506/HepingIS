@@ -16,7 +16,7 @@ html, body {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-image: url(https://img.onl/DCJmru);
+  background-image: url("圖2.jpg")
 }
 
 .title {
@@ -428,7 +428,7 @@ html, body {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-image: url(https://img.onl/DCJmru);
+    background-image: url("圖2.jpg");
   }
 
   .title {
