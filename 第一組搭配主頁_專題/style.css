@@ -46,7 +46,7 @@ html, body {
   margin: 0;
   padding: 0;
   position: relative;
-  background-image: url("https://img.onl/vpotFY");
+  background-image: url("map.jfif");
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -300,7 +300,7 @@ html, body {
   position: absolute;
   -webkit-clip-path: polygon(0 0, 50% 15%, 100% 50%, 100% 100%, 50% 100%, 0 70%);
   clip-path: polygon(0 0, 50% 15%, 100% 50%, 100% 100%, 50% 100%, 0 70%);
-  background-image: url("https://img.onl/bmMpEv");
+  background-image: url("m1.jpg");
   background-size: cover;
   background-position: center;
   opacity: 0.6;
@@ -324,7 +324,7 @@ html, body {
 .top2:after {
   content: "";
   position: absolute;
-  background-image: url("https://img.onl/7DuU3Q");
+  background-image: url("m2.jpg");
   background-size: cover;
   background-position: center;
   opacity: 0.6;
@@ -348,7 +348,7 @@ html, body {
   position: absolute;
   -webkit-clip-path: polygon(100% 0, 50% 15%, 0 50%, 0 100%, 50% 100%, 100% 70%);
   clip-path: polygon(100% 0, 50% 15%, 0 50%, 0 100%, 50% 100%, 100% 70%);
-  background-image: url("https://img.onl/vOu3Q6");
+  background-image: url("m3.jpg");
   background-size: cover;
   background-position: center;
   z-index: -10;
@@ -394,7 +394,7 @@ html, body {
 .center1:after {
   content: "";
   position: absolute;
-  background-image: url("https://img.onl/8pKcmU");
+  background-image: url("m4.jpg");
   background-size: cover;
   background-position: center;
   opacity: 0.6;
@@ -416,7 +416,7 @@ html, body {
 .center3:after {
   content: "";
   position: absolute;
-  background-image: url("https://img.onl/BQ8nGC");
+  background-image: url("m5.jpg");
   background-size: cover;
   background-position: center;
   opacity: 0.6;
@@ -454,7 +454,7 @@ html, body {
   position: absolute;
   -webkit-clip-path: polygon(0 100%, 70% 80%, 100% 50%, 100% 0, 50% 0, 0 25%);
   clip-path: polygon(0 100%, 70% 80%, 100% 50%, 100% 0, 50% 0, 0 25%);
-  background-image: url("https://img.onl/lQ6Smq");
+  background-image: url("m6.jpg");
   background-size: cover;
   background-position: center;
   z-index: -10;
@@ -477,7 +477,7 @@ html, body {
 .bottom2:after {
   content: "";
   position: absolute;
-  background-image: url("https://img.onl/QBix9R");
+  background-image: url("m7.jpg");
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -501,7 +501,7 @@ html, body {
   position: absolute;
   -webkit-clip-path: polygon(100% 100%, 50% 85%, 0 50%, 0 0, 50% 0, 100% 25%);
   clip-path: polygon(100% 100%, 50% 85%, 0 50%, 0 0, 50% 0, 100% 25%);
-  background-image: url("https://img.onl/7fyKhx");
+  background-image: url("m8.jpg");
   background-size: cover;
   background-position: center;
   z-index: -1;
