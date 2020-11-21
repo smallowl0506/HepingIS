@@ -32,12 +32,12 @@ function changeRoom() {
       $(".verticalScrollitem .year a").css("display", "flex");
       $(".verticalScrollitem .year a").attr(
         "href",
-        "https://smallowl0506.github.io/HepingIS/%E5%BE%9E%E9%81%A0%E5%8F%A4%E5%88%B0%E8%BF%91%E4%B8%96/test_RWD/index.html"
+        "https://smallowl0506.github.io/HepingIS/%E5%BE%9E%E9%81%A0%E5%8F%A4%E5%88%B0%E8%BF%91%E4%B8%96/%E6%AD%B7%E5%8F%B2%E7%99%BC%E5%B1%95%E5%BB%B3%E5%96%AE%E5%85%83%E4%B8%80/index.html"
       );
       $(".verticalScrollitem .leftpicture").css("opacity", "1");
       $(".verticalScrollitem .leftpicture img").attr(
         "src",
-        "https://img.onl/oinN3g"
+        "圖3.jpg"
       );
       $(".verticalScrollitem .leftpicturetext").css("opacity", "1");
       $(".verticalScrollitem .leftpicturetext").text(
@@ -59,7 +59,7 @@ function changeRoom() {
       $(".verticalScrollitem .leftpicture").css("opacity", "1");
       $(".verticalScrollitem .leftpicture img").attr(
         "src",
-        "https://img.onl/2kcXda"
+        "圖4.jpg"
       );
       $(".verticalScrollitem .leftpicturetext").css("opacity", "1");
       $(".verticalScrollitem .leftpicturetext").text(
@@ -81,7 +81,7 @@ function changeRoom() {
       $(".verticalScrollitem .leftpicture").css("opacity", "1");
       $(".verticalScrollitem .leftpicture img").attr(
         "src",
-        "https://img.onl/fzJK"
+        "圖5.jpg"
       );
       $(".verticalScrollitem .leftpicturetext").css("opacity", "1");
       $(".verticalScrollitem .leftpicturetext").text(
@@ -103,7 +103,7 @@ function changeRoom() {
       $(".verticalScrollitem .leftpicture").css("opacity", "1");
       $(".verticalScrollitem .leftpicture img").attr(
         "src",
-        "https://img.onl/T7zUtB"
+        "圖6.jpg"
       );
       $(".verticalScrollitem .leftpicturetext").css("opacity", "1");
       $(".verticalScrollitem .leftpicturetext").text(
@@ -125,7 +125,7 @@ function changeRoom() {
       $(".verticalScrollitem .leftpicture").css("opacity", "1");
       $(".verticalScrollitem .leftpicture img").attr(
         "src",
-        "https://img.onl/X0KYZf"
+        "圖7.jpg"
       );
       $(".verticalScrollitem .leftpicturetext").css("opacity", "1");
       $(".verticalScrollitem .leftpicturetext").text(

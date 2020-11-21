@@ -37,7 +37,7 @@ function changeRoom() {
       $(".verticalScrollitem .leftpicture").css("opacity", "1");
       $(".verticalScrollitem .leftpicture img").attr(
         "src",
-        "https://img.onl/oinN3g"
+        "圖3.jpg"
       );
       $(".verticalScrollitem .leftpicturetext").css("opacity", "1");
       $(".verticalScrollitem .leftpicturetext").text(
@@ -59,7 +59,7 @@ function changeRoom() {
       $(".verticalScrollitem .leftpicture").css("opacity", "1");
       $(".verticalScrollitem .leftpicture img").attr(
         "src",
-        "https://img.onl/2kcXda"
+        "圖4.jpg"
       );
       $(".verticalScrollitem .leftpicturetext").css("opacity", "1");
       $(".verticalScrollitem .leftpicturetext").text(
@@ -81,7 +81,7 @@ function changeRoom() {
       $(".verticalScrollitem .leftpicture").css("opacity", "1");
       $(".verticalScrollitem .leftpicture img").attr(
         "src",
-        "https://img.onl/fzJK"
+        "圖5.jpg"
       );
       $(".verticalScrollitem .leftpicturetext").css("opacity", "1");
       $(".verticalScrollitem .leftpicturetext").text(
@@ -103,7 +103,7 @@ function changeRoom() {
       $(".verticalScrollitem .leftpicture").css("opacity", "1");
       $(".verticalScrollitem .leftpicture img").attr(
         "src",
-        "https://img.onl/T7zUtB"
+        "圖6.jpg"
       );
       $(".verticalScrollitem .leftpicturetext").css("opacity", "1");
       $(".verticalScrollitem .leftpicturetext").text(
@@ -125,7 +125,7 @@ function changeRoom() {
       $(".verticalScrollitem .leftpicture").css("opacity", "1");
       $(".verticalScrollitem .leftpicture img").attr(
         "src",
-        "https://img.onl/X0KYZf"
+        "圖7.jpg"
       );
       $(".verticalScrollitem .leftpicturetext").css("opacity", "1");
       $(".verticalScrollitem .leftpicturetext").text(
