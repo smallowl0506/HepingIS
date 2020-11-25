@@ -121,6 +121,23 @@ html,body{
     text-align: left;
     padding-left: 3%;
 }
+
+#flipbook .page button{
+    width: 20vmin;
+    padding: 2px 4px;
+    background-color:#555555;
+    color:white;
+    font-size: 2vmin;
+    border-radius: 12px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+#flipbook .page button:hover{
+    background-color:white;
+    color:black;
+}
+
 #flipbook .page-wrapper{
     -webkit-perspective: 2000px;
     -moz-perspective: 2000px;
@@ -209,7 +226,21 @@ html,body{
     text-align: left;
     padding-left: 3%;
 }
+#flipbook2 .page button{
+    width: 25vmin;
+    padding: 2px 4px;
+    background-color:#555555;
+    color:white;
+    font-size: 2vmin;
+    border-radius: 12px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
 
+#flipbook2   .page button:hover{
+    background-color:white;
+    color:black;
+}
 #flipbook2 .page-wrapper{
     -webkit-perspective: 2000px;
     -moz-perspective: 2000px;
@@ -298,7 +329,21 @@ html,body{
     text-align: left;
     padding-left: 3%;
 }
+#flipbook3 .page button{
+    width: 25vmin;
+    padding: 2px 4px;
+    background-color:#555555;
+    color:white;
+    font-size: 2vmin;
+    border-radius: 12px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
 
+#flipbook3 .page button:hover{
+    background-color:white;
+    color:black;
+}
 #flipbook3 .page-wrapper{
     -webkit-perspective: 2000px;
     -moz-perspective: 2000px;
@@ -387,7 +432,21 @@ html,body{
     text-align: left;
     padding-left: 3%;
 }
+#flipbook4 .page button{
+    width: 20vmin;
+    padding: 2px 4px;
+    background-color:#555555;
+    color:white;
+    font-size: 2vmin;
+    border-radius: 12px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
 
+#flipbook4 .page button:hover{
+    background-color:white;
+    color:black;
+}
 #flipbook4 .page-wrapper{
     -webkit-perspective: 2000px;
     -moz-perspective: 2000px;
